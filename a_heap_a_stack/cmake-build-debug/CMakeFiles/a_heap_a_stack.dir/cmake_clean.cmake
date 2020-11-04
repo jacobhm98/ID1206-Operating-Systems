@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/a_heap_a_stack.dir/heap.c.o"
   "CMakeFiles/a_heap_a_stack.dir/stack.c.o"
   "a_heap_a_stack"
   "a_heap_a_stack.pdb"

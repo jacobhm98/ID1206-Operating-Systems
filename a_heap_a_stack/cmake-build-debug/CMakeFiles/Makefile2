@@ -94,12 +94,12 @@ clean: CMakeFiles/a_heap_a_stack.dir/clean
 CMakeFiles/a_heap_a_stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target a_heap_a_stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target a_heap_a_stack"
 .PHONY : CMakeFiles/a_heap_a_stack.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/a_heap_a_stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/a_heap_a_stack.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/a_heap_a_stack.dir/rule

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/heap.c" "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/heap.c.o"
   "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/stack.c" "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

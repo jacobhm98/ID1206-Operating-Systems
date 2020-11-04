@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/heap.c">
+			<Option target="a_heap_a_stack"/>
+		</Unit>
 		<Unit filename="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/stack.c">
 			<Option target="a_heap_a_stack"/>
 		</Unit>

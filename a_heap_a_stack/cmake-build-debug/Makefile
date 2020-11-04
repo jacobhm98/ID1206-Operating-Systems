@@ -143,6 +143,33 @@ a_heap_a_stack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/build
 .PHONY : a_heap_a_stack/fast
 
+heap.o: heap.c.o
+
+.PHONY : heap.o
+
+# target to build an object file
+heap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/heap.c.o
+.PHONY : heap.c.o
+
+heap.i: heap.c.i
+
+.PHONY : heap.i
+
+# target to preprocess a source file
+heap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/heap.c.i
+.PHONY : heap.c.i
+
+heap.s: heap.c.s
+
+.PHONY : heap.s
+
+# target to generate assembly for a file
+heap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/heap.c.s
+.PHONY : heap.c.s
+
 stack.o: stack.c.o
 
 .PHONY : stack.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... a_heap_a_stack"
+	@echo "... heap.o"
+	@echo "... heap.i"
+	@echo "... heap.s"
 	@echo "... stack.o"
 	@echo "... stack.i"
 	@echo "... stack.s"
