@@ -3,4 +3,4 @@ project(a_heap_a_stack C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(a_heap_a_stack stack.c)
+add_executable(a_heap_a_stack stack.c heap.c)

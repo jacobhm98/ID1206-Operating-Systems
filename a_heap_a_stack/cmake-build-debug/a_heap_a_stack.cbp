@@ -8,80 +8,81 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
+				<Option working_dir="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
+				<Option working_dir="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="a_heap_a_stack">
-				<Option output="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/a_heap_a_stack" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
+				<Option output="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/a_heap_a_stack" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 a_heap_a_stack"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 a_heap_a_stack"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="a_heap_a_stack/fast">
-				<Option output="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/a_heap_a_stack" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
+				<Option output="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/a_heap_a_stack" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 a_heap_a_stack/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 a_heap_a_stack/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/stack.c">
+		<Unit filename="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/heap.c">
 			<Option target="a_heap_a_stack"/>
 		</Unit>
-		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/CMakeLists.txt">
+		<Unit filename="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/stack.c">
+			<Option target="a_heap_a_stack"/>
+		</Unit>
+		<Unit filename="/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

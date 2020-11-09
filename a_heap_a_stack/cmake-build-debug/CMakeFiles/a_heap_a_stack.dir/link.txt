@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/a_heap_a_stack.dir/stack.c.o  -o a_heap_a_stack 
+/usr/bin/cc -g   CMakeFiles/a_heap_a_stack.dir/stack.c.o CMakeFiles/a_heap_a_stack.dir/heap.c.o  -o a_heap_a_stack 

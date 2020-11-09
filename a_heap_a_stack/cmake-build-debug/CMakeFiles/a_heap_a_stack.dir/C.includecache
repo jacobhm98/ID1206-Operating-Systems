@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/stack.c
+/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/stack.c
 stdio.h
 -
 stdlib.h

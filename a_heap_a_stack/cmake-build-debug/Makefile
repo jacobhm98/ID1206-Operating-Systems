@@ -59,38 +59,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack
+CMAKE_SOURCE_DIR = /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,11 +87,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/a_heap_a_stack/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,6 +143,33 @@ a_heap_a_stack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/build
 .PHONY : a_heap_a_stack/fast
 
+heap.o: heap.c.o
+
+.PHONY : heap.o
+
+# target to build an object file
+heap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/heap.c.o
+.PHONY : heap.c.o
+
+heap.i: heap.c.i
+
+.PHONY : heap.i
+
+# target to preprocess a source file
+heap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/heap.c.i
+.PHONY : heap.c.i
+
+heap.s: heap.c.s
+
+.PHONY : heap.s
+
+# target to generate assembly for a file
+heap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_heap_a_stack.dir/build.make CMakeFiles/a_heap_a_stack.dir/heap.c.s
+.PHONY : heap.c.s
+
 stack.o: stack.c.o
 
 .PHONY : stack.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... a_heap_a_stack"
+	@echo "... heap.o"
+	@echo "... heap.i"
+	@echo "... heap.s"
 	@echo "... stack.o"
 	@echo "... stack.i"
 	@echo "... stack.s"
