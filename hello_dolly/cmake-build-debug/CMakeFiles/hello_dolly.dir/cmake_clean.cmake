@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hello_dolly.dir/main.c.o"
+  "CMakeFiles/hello_dolly.dir/zombie.c.o"
   "hello_dolly"
   "hello_dolly.pdb"
 )

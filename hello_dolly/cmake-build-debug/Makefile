@@ -170,6 +170,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_dolly.dir/build.make CMakeFiles/hello_dolly.dir/main.c.s
 .PHONY : main.c.s
 
+zombie.o: zombie.c.o
+
+.PHONY : zombie.o
+
+# target to build an object file
+zombie.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_dolly.dir/build.make CMakeFiles/hello_dolly.dir/zombie.c.o
+.PHONY : zombie.c.o
+
+zombie.i: zombie.c.i
+
+.PHONY : zombie.i
+
+# target to preprocess a source file
+zombie.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_dolly.dir/build.make CMakeFiles/hello_dolly.dir/zombie.c.i
+.PHONY : zombie.c.i
+
+zombie.s: zombie.c.s
+
+.PHONY : zombie.s
+
+# target to generate assembly for a file
+zombie.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_dolly.dir/build.make CMakeFiles/hello_dolly.dir/zombie.c.s
+.PHONY : zombie.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... zombie.o"
+	@echo "... zombie.i"
+	@echo "... zombie.s"
 .PHONY : help
 
 

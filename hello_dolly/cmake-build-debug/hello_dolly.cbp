@@ -78,7 +78,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/hello_dolly.h">
+			<Option target="hello_dolly"/>
+		</Unit>
 		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/main.c">
+			<Option target="hello_dolly"/>
+		</Unit>
+		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/zombie.c">
 			<Option target="hello_dolly"/>
 		</Unit>
 		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/CMakeLists.txt">

@@ -94,12 +94,12 @@ clean: CMakeFiles/hello_dolly.dir/clean
 CMakeFiles/hello_dolly.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_dolly.dir/build.make CMakeFiles/hello_dolly.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_dolly.dir/build.make CMakeFiles/hello_dolly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target hello_dolly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target hello_dolly"
 .PHONY : CMakeFiles/hello_dolly.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello_dolly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello_dolly.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/hello_dolly.dir/rule

@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/main.c
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/hello_dolly.h
 stdio.h
--
-unistd.h
 -
 sys/wait.h
 -
+unistd.h
+-
+
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/main.c
+hello_dolly.h
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/hello_dolly.h
 
