@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/hello_dolly/main.c
+stdio.h
+-
+unistd.h
+-
+sys/wait.h
+-
+
