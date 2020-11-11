@@ -1,0 +1,386 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+$(VERBOSE).SILENT	a_heap_a_stack/cmake-build-debug/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	hello_dolly/cmake-build-debug/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE)MAKESILENT	a_heap_a_stack/cmake-build-debug/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
+$(VERBOSE)MAKESILENT	hello_dolly/cmake-build-debug/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
+%	a_heap_a_stack/cmake-build-debug/Makefile	/^% : %,v$/;"	t
+%	a_heap_a_stack/cmake-build-debug/Makefile	/^% : RCS\/%$/;"	t
+%	a_heap_a_stack/cmake-build-debug/Makefile	/^% : RCS\/%,v$/;"	t
+%	a_heap_a_stack/cmake-build-debug/Makefile	/^% : SCCS\/s.%$/;"	t
+%	a_heap_a_stack/cmake-build-debug/Makefile	/^% : s.%$/;"	t
+%	hello_dolly/cmake-build-debug/Makefile	/^% : %,v$/;"	t
+%	hello_dolly/cmake-build-debug/Makefile	/^% : RCS\/%$/;"	t
+%	hello_dolly/cmake-build-debug/Makefile	/^% : RCS\/%,v$/;"	t
+%	hello_dolly/cmake-build-debug/Makefile	/^% : SCCS\/s.%$/;"	t
+%	hello_dolly/cmake-build-debug/Makefile	/^% : s.%$/;"	t
+.boot	boot_a_kernel/linker.ld	/^	.boot :$/;"	S
+.text	boot_a_kernel/linker.ld	/^	.text :$/;"	S
+1jk3aJaWSwjNjAEHdeFIxpltYdU	.idea/workspace.xml	/^  <component name="ProjectId" id="1jk3aJaWSwjNjAEHdeFIxpltYdU" \/>$/;"	i
+965bc197-9e86-4c4b-96a6-0f31d1593bdf	.idea/workspace.xml	/^      <changelist id="965bc197-9e86-4c4b-96a6-0f31d1593bdf" name="Default Changelist" comment=""/;"	i
+965bc197-9e86-4c4b-96a6-0f31d1593bdf	.idea/workspace.xml	/^    <list default="true" id="965bc197-9e86-4c4b-96a6-0f31d1593bdf" name="Default Changelist" com/;"	i
+ARCHITECTURE_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+CMAKE_AR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/Library\/Developer\/CommandLineTools\/usr\/bin\/ar")$/;"	v
+CMAKE_BINARY_DIR	a_heap_a_stack/cmake-build-debug/Makefile	/^CMAKE_BINARY_DIR = \/home\/jacob\/Documents\/KTH\/bachelors\/ID1206-Operating_Systems\/a_heap_a_/;"	m
+CMAKE_BINARY_DIR	hello_dolly/cmake-build-debug/Makefile	/^CMAKE_BINARY_DIR = \/Users\/jacobmalm\/Documents\/KTH\/bachelors\/ID1206-Operating_Systems\/hell/;"	m
+CMAKE_C11_COMPILE_FEATURES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C11_COMPILE_FEATURES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_COMMAND	a_heap_a_stack/cmake-build-debug/Makefile	/^CMAKE_COMMAND = \/var\/lib\/snapd\/snap\/clion\/129\/bin\/cmake\/linux\/bin\/cmake$/;"	m
+CMAKE_COMMAND	hello_dolly/cmake-build-debug/Makefile	/^CMAKE_COMMAND = \/Applications\/CLion.app\/Contents\/bin\/cmake\/mac\/bin\/cmake$/;"	m
+CMAKE_COMPILER_IS_CYGWIN	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_CYGWIN	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_GNUCC	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCC	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC )$/;"	v
+CMAKE_COMPILER_IS_MINGW	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_COMPILER_IS_MINGW	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_CROSSCOMPILING	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	hello_dolly/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	a_heap_a_stack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	hello_dolly/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	a_heap_a_stack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	hello_dolly/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_C_ABI_COMPILED	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_ABI_COMPILED	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_COMPILER	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/Library\/Developer\/CommandLineTools\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER_ABI	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_ABI	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "")$/;"	v
+CMAKE_C_COMPILER_AR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_C_COMPILER_AR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "")$/;"	v
+CMAKE_C_COMPILER_ARG1	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ARG1	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_C_COMPILER_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/DependInfo.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "AppleClang")$/;"	v
+CMAKE_C_COMPILER_ID	hello_dolly/cmake-build-debug/CMakeFiles/hello_dolly.dir/DependInfo.cmake	/^set(CMAKE_C_COMPILER_ID "AppleClang")$/;"	v
+CMAKE_C_COMPILER_ID_RUN	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_ID_RUN	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_RANLIB	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_C_COMPILER_RANLIB	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "")$/;"	v
+CMAKE_C_COMPILER_VERSION	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "10.2.0")$/;"	v
+CMAKE_C_COMPILER_VERSION	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "11.0.3.11030032")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_WORKS	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WORKS	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WRAPPER	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILER_WRAPPER	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILE_FEATURES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_COMPILE_FEATURES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/10.2.0\/include;/;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clan/;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/10.2.0;\/usr\/lib;\//;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX10.15/;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "\/Library\/Developer\/CommandLineTools\/SDKs\/M/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	a_heap_a_stack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	hello_dolly/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	a_heap_a_stack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	hello_dolly/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LINKER_PREFERENCE	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_LINKER_PREFERENCE	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_PLATFORM_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_PLATFORM_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Darwin")$/;"	v
+CMAKE_C_SIMULATE_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_STANDARD	a_heap_a_stack/CMakeLists.txt	/^set(CMAKE_C_STANDARD 11)$/;"	v
+CMAKE_C_STANDARD	hello_dolly/CMakeLists.txt	/^set(CMAKE_C_STANDARD 99)$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")$/;"	v
+CMAKE_C_TARGET_INCLUDE_PATH	a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/DependInfo.cmake	/^set(CMAKE_C_TARGET_INCLUDE_PATH$/;"	v
+CMAKE_C_TARGET_INCLUDE_PATH	hello_dolly/cmake-build-debug/CMakeFiles/hello_dolly.dir/DependInfo.cmake	/^set(CMAKE_C_TARGET_INCLUDE_PATH$/;"	v
+CMAKE_DEPENDS_CHECK_C	a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_C$/;"	v
+CMAKE_DEPENDS_CHECK_C	hello_dolly/cmake-build-debug/CMakeFiles/hello_dolly.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_C$/;"	v
+CMAKE_DEPENDS_GENERATOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_GENERATOR	hello_dolly/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_LANGUAGES	a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	hello_dolly/cmake-build-debug/CMakeFiles/hello_dolly.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPEND_INFO_FILES	a_heap_a_stack/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_DEPEND_INFO_FILES	hello_dolly/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_FORCE_UNIX_PATHS	a_heap_a_stack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_FORCE_UNIX_PATHS	hello_dolly/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	hello_dolly/cmake-build-debug/CMakeFiles/hello_dolly.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_HOST_SYSTEM	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-5.9.2-arch1-1")$/;"	v
+CMAKE_HOST_SYSTEM	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Darwin-19.6.0")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Darwin")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "5.9.2-arch1-1")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "19.6.0")$/;"	v
+CMAKE_INSTALL_COMPONENT	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_COMPONENT	hello_dolly/cmake-build-debug/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	hello_dolly/cmake-build-debug/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "Debug")$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	hello_dolly/cmake-build-debug/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "Debug")$/;"	v
+CMAKE_INSTALL_MANIFEST	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	hello_dolly/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	hello_dolly/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_PREFIX	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_PREFIX	hello_dolly/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	a_heap_a_stack/cmake-build-debug/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LINKER	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/Library\/Developer\/CommandLineTools\/usr\/bin\/ld")$/;"	v
+CMAKE_MAKEFILE_DEPENDS	a_heap_a_stack/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_DEPENDS	hello_dolly/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	a_heap_a_stack/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	hello_dolly/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	a_heap_a_stack/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	hello_dolly/cmake-build-debug/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MT	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_RANLIB	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/Library\/Developer\/CommandLineTools\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	a_heap_a_stack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/jacob\/Documents\/KTH\/bachelors\/ID1206-Operating_S/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	hello_dolly/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/Users\/jacobmalm\/Documents\/KTH\/bachelors\/ID1206-Operat/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	a_heap_a_stack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/jacob\/Documents\/KTH\/bachelors\/ID1206-Operating_S/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	hello_dolly/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/Users\/jacobmalm\/Documents\/KTH\/bachelors\/ID1206-Operat/;"	v
+CMAKE_SIZEOF_VOID_P	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SOURCE_DIR	a_heap_a_stack/cmake-build-debug/Makefile	/^CMAKE_SOURCE_DIR = \/home\/jacob\/Documents\/KTH\/bachelors\/ID1206-Operating_Systems\/a_heap_a_/;"	m
+CMAKE_SOURCE_DIR	hello_dolly/cmake-build-debug/Makefile	/^CMAKE_SOURCE_DIR = \/Users\/jacobmalm\/Documents\/KTH\/bachelors\/ID1206-Operating_Systems\/hell/;"	m
+CMAKE_SYSTEM	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-5.9.2-arch1-1")$/;"	v
+CMAKE_SYSTEM	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Darwin-19.6.0")$/;"	v
+CMAKE_SYSTEM_LOADED	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_LOADED	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_NAME	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_NAME	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Darwin")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_VERSION	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.9.2-arch1-1")$/;"	v
+CMAKE_SYSTEM_VERSION	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "19.6.0")$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	a_heap_a_stack/cmake-build-debug/CMakeFiles/a_heap_a_stack.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	hello_dolly/cmake-build-debug/CMakeFiles/hello_dolly.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+COMPILER_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION_INTERNAL	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_MAJOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+CYGWIN	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+CYGWIN	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+C_DIALECT	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+C_DIALECT	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+DEC	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+Default	.idea/workspace.xml	/^    <task active="true" id="Default" summary="Default task">$/;"	i
+EQUALS	a_heap_a_stack/cmake-build-debug/Makefile	/^EQUALS = =$/;"	m
+EQUALS	hello_dolly/cmake-build-debug/Makefile	/^EQUALS = =$/;"	m
+HELLO_DOLLY_HELLO_DOLLY_H	hello_dolly/hello_dolly.h	/^#define HELLO_DOLLY_HELLO_DOLLY_H$/;"	d
+HEX	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+ID_VOID_MAIN	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+ID_VOID_MAIN	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+MINGW	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MINGW	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(MINGW 1)$/;"	v
+PLATFORM_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+RM	a_heap_a_stack/cmake-build-debug/Makefile	/^RM = \/var\/lib\/snapd\/snap\/clion\/129\/bin\/cmake\/linux\/bin\/cmake -E rm -f$/;"	m
+RM	hello_dolly/cmake-build-debug/Makefile	/^RM = \/Applications\/CLion.app\/Contents\/bin\/cmake\/mac\/bin\/cmake -E rm -f$/;"	m
+SHELL	a_heap_a_stack/cmake-build-debug/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	hello_dolly/cmake-build-debug/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_PATCH	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+STRINGIFY	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+UNIX	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(UNIX 1)$/;"	v
+UNIX	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake	/^  set(UNIX 1)$/;"	v
+a_heap_a_stack	a_heap_a_stack/CMakeLists.txt	/^add_executable(a_heap_a_stack stack.c heap.c)/;"	t
+a_heap_a_stack	a_heap_a_stack/CMakeLists.txt	/^project(a_heap_a_stack C)$/;"	p
+a_heap_a_stack	a_heap_a_stack/cmake-build-debug/Makefile	/^a_heap_a_stack: cmake_check_build_system$/;"	t
+a_heap_a_stack/fast	a_heap_a_stack/cmake-build-debug/Makefile	/^a_heap_a_stack\/fast:$/;"	t
+all	a_heap_a_stack/cmake-build-debug/Makefile	/^all: cmake_check_build_system$/;"	t
+all	hello_dolly/cmake-build-debug/Makefile	/^all: cmake_check_build_system$/;"	t
+arch	boot_a_kernel/multiboot_header.asm	/^arch equ 0$/;"	d
+bits	boot_a_kernel/boot.asm	/^bits 16$/;"	l
+bits	boot_a_kernel/kernel.asm	/^bits 32$/;"	l
+clean	a_heap_a_stack/cmake-build-debug/Makefile	/^clean:$/;"	t
+clean	hello_dolly/cmake-build-debug/Makefile	/^clean:$/;"	t
+clean/fast	a_heap_a_stack/cmake-build-debug/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	hello_dolly/cmake-build-debug/Makefile	/^clean\/fast: clean$/;"	t
+clone	hello_dolly/main.c	/^int clone() {$/;"	f	typeref:typename:int
+cmake_check_build_system	a_heap_a_stack/cmake-build-debug/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	hello_dolly/cmake-build-debug/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_force	a_heap_a_stack/cmake-build-debug/Makefile	/^cmake_force:$/;"	t
+cmake_force	hello_dolly/cmake-build-debug/Makefile	/^cmake_force:$/;"	t
+const	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+const	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+default_target	a_heap_a_stack/cmake-build-debug/Makefile	/^default_target: all$/;"	t
+default_target	hello_dolly/cmake-build-debug/Makefile	/^default_target: all$/;"	t
+depend	a_heap_a_stack/cmake-build-debug/Makefile	/^depend:$/;"	t
+depend	hello_dolly/cmake-build-debug/Makefile	/^depend:$/;"	t
+done	boot_a_kernel/boot.asm	/^.done:$/;"	l
+edit_cache	a_heap_a_stack/cmake-build-debug/Makefile	/^edit_cache:$/;"	t
+edit_cache	hello_dolly/cmake-build-debug/Makefile	/^edit_cache:$/;"	t
+edit_cache/fast	a_heap_a_stack/cmake-build-debug/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	hello_dolly/cmake-build-debug/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+entry_point	hello_dolly/zombie.c	/^int entry_point(){$/;"	f	typeref:typename:int
+foo	a_heap_a_stack/stack.c	/^void foo(unsigned long *stop){$/;"	f	typeref:typename:void
+global	a_heap_a_stack/stack.c	/^char global[] = "This is a global string";$/;"	v	typeref:typename:char[]
+global	boot_a_kernel/kernel.asm	/^global start$/;"	l
+header_end	boot_a_kernel/multiboot_header.asm	/^header_end:$/;"	l
+header_start	boot_a_kernel/multiboot_header.asm	/^header_start:$/;"	l
+heap.c.i	a_heap_a_stack/cmake-build-debug/Makefile	/^heap.c.i:$/;"	t
+heap.c.o	a_heap_a_stack/cmake-build-debug/Makefile	/^heap.c.o:$/;"	t
+heap.c.s	a_heap_a_stack/cmake-build-debug/Makefile	/^heap.c.s:$/;"	t
+heap.i	a_heap_a_stack/cmake-build-debug/Makefile	/^heap.i: heap.c.i$/;"	t
+heap.o	a_heap_a_stack/cmake-build-debug/Makefile	/^heap.o: heap.c.o$/;"	t
+heap.s	a_heap_a_stack/cmake-build-debug/Makefile	/^heap.s: heap.c.s$/;"	t
+hello_dolly	hello_dolly/CMakeLists.txt	/^add_executable(hello_dolly main.c zombie.c hello_dolly.h)/;"	t
+hello_dolly	hello_dolly/CMakeLists.txt	/^project(hello_dolly C)$/;"	p
+hello_dolly	hello_dolly/cmake-build-debug/Makefile	/^hello_dolly: cmake_check_build_system$/;"	t
+hello_dolly/fast	hello_dolly/cmake-build-debug/Makefile	/^hello_dolly\/fast:$/;"	t
+help	a_heap_a_stack/cmake-build-debug/Makefile	/^help:$/;"	t
+help	hello_dolly/cmake-build-debug/Makefile	/^help:$/;"	t
+info_arch	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_cray	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_language_dialect_default	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
+info_language_dialect_default	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
+info_platform	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate_version	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+magic	boot_a_kernel/multiboot_header.asm	/^magic equ 0xe85250d6$/;"	d
+main	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	a_heap_a_stack/heap.c	/^int main(){$/;"	f	typeref:typename:int
+main	a_heap_a_stack/stack.c	/^int main(){$/;"	f	typeref:typename:int
+main	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	hello_dolly/main.c	/^int main() {$/;"	f	typeref:typename:int
+main.c.i	hello_dolly/cmake-build-debug/Makefile	/^main.c.i:$/;"	t
+main.c.o	hello_dolly/cmake-build-debug/Makefile	/^main.c.o:$/;"	t
+main.c.s	hello_dolly/cmake-build-debug/Makefile	/^main.c.s:$/;"	t
+main.i	hello_dolly/cmake-build-debug/Makefile	/^main.i: main.c.i$/;"	t
+main.o	hello_dolly/cmake-build-debug/Makefile	/^main.o: main.c.o$/;"	t
+main.s	hello_dolly/cmake-build-debug/Makefile	/^main.s: main.c.s$/;"	t
+mov	boot_a_kernel/boot.asm	/^	mov ds, ax$/;"	d
+msg	boot_a_kernel/boot.asm	/^msg:	db 'Hello', 0$/;"	d
+next	boot_a_kernel/boot.asm	/^.next:$/;"	l
+parents	hello_dolly/main.c	/^int parents(){$/;"	f	typeref:typename:int
+preinstall	a_heap_a_stack/cmake-build-debug/Makefile	/^preinstall: all$/;"	t
+preinstall	hello_dolly/cmake-build-debug/Makefile	/^preinstall: all$/;"	t
+preinstall/fast	a_heap_a_stack/cmake-build-debug/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	hello_dolly/cmake-build-debug/Makefile	/^preinstall\/fast:$/;"	t
+qnxnto	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+rebuild_cache	a_heap_a_stack/cmake-build-debug/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	hello_dolly/cmake-build-debug/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache/fast	a_heap_a_stack/cmake-build-debug/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	hello_dolly/cmake-build-debug/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+stack.c.i	a_heap_a_stack/cmake-build-debug/Makefile	/^stack.c.i:$/;"	t
+stack.c.o	a_heap_a_stack/cmake-build-debug/Makefile	/^stack.c.o:$/;"	t
+stack.c.s	a_heap_a_stack/cmake-build-debug/Makefile	/^stack.c.s:$/;"	t
+stack.i	a_heap_a_stack/cmake-build-debug/Makefile	/^stack.i: stack.c.i$/;"	t
+stack.o	a_heap_a_stack/cmake-build-debug/Makefile	/^stack.o: stack.c.o$/;"	t
+stack.s	a_heap_a_stack/cmake-build-debug/Makefile	/^stack.s: stack.c.s$/;"	t
+start	boot_a_kernel/boot.asm	/^start:$/;"	l
+start	boot_a_kernel/kernel.asm	/^start:$/;"	l
+volatile	a_heap_a_stack/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+volatile	hello_dolly/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+zombie.c.i	hello_dolly/cmake-build-debug/Makefile	/^zombie.c.i:$/;"	t
+zombie.c.o	hello_dolly/cmake-build-debug/Makefile	/^zombie.c.o:$/;"	t
+zombie.c.s	hello_dolly/cmake-build-debug/Makefile	/^zombie.c.s:$/;"	t
+zombie.i	hello_dolly/cmake-build-debug/Makefile	/^zombie.i: zombie.c.i$/;"	t
+zombie.o	hello_dolly/cmake-build-debug/Makefile	/^zombie.o: zombie.c.o$/;"	t
+zombie.s	hello_dolly/cmake-build-debug/Makefile	/^zombie.s: zombie.c.s$/;"	t
+zot	a_heap_a_stack/stack.c	/^void zot(unsigned long *stop){$/;"	f	typeref:typename:void
