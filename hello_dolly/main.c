@@ -1,13 +1,23 @@
 #include "hello_dolly.h"
 
-int entry_point();
-int clone();
-int parents();
-int groupd_n_dat();
 
 
 int main() {
-    parents();
+    groups_n_dat();
+    return 0;
+}
+
+int groups_n_dat(){
+   int pid = fork();
+   if (pid == 0){
+       int child = getpid();
+       printf("im the child %d in group %d\n", getpid(), getpgid(child));
+   }
+   else{
+       int parent = getpid();
+       printf("im the parent %d in group %d\n", parent, getpgid(parent));
+       wait(NULL);
+   }
     return 0;
 }
 

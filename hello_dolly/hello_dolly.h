@@ -10,3 +10,8 @@
 #include <stdio.h>
 #include <sys/wait.h>
 #include <unistd.h>
+
+int entry_point();
+int clone();
+int parents();
+int groups_n_dat();
