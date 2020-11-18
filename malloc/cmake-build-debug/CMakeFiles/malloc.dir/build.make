@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc
+CMAKE_SOURCE_DIR = /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/malloc.dir/depend.make
@@ -79,29 +79,29 @@ include CMakeFiles/malloc.dir/flags.make
 
 CMakeFiles/malloc.dir/test.c.o: CMakeFiles/malloc.dir/flags.make
 CMakeFiles/malloc.dir/test.c.o: ../test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/malloc.dir/test.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/malloc.dir/test.c.o   -c /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/malloc.dir/test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/malloc.dir/test.c.o   -c /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c
 
 CMakeFiles/malloc.dir/test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/malloc.dir/test.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c > CMakeFiles/malloc.dir/test.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c > CMakeFiles/malloc.dir/test.c.i
 
 CMakeFiles/malloc.dir/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/malloc.dir/test.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c -o CMakeFiles/malloc.dir/test.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c -o CMakeFiles/malloc.dir/test.c.s
 
 CMakeFiles/malloc.dir/dlmall.c.o: CMakeFiles/malloc.dir/flags.make
 CMakeFiles/malloc.dir/dlmall.c.o: ../dlmall.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/malloc.dir/dlmall.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/malloc.dir/dlmall.c.o   -c /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/malloc.dir/dlmall.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/malloc.dir/dlmall.c.o   -c /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c
 
 CMakeFiles/malloc.dir/dlmall.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/malloc.dir/dlmall.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c > CMakeFiles/malloc.dir/dlmall.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c > CMakeFiles/malloc.dir/dlmall.c.i
 
 CMakeFiles/malloc.dir/dlmall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/malloc.dir/dlmall.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c -o CMakeFiles/malloc.dir/dlmall.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c -o CMakeFiles/malloc.dir/dlmall.c.s
 
 # Object files for target malloc
 malloc_OBJECTS = \
@@ -115,7 +115,7 @@ malloc: CMakeFiles/malloc.dir/test.c.o
 malloc: CMakeFiles/malloc.dir/dlmall.c.o
 malloc: CMakeFiles/malloc.dir/build.make
 malloc: CMakeFiles/malloc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable malloc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable malloc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/malloc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/malloc.dir/clean:
 .PHONY : CMakeFiles/malloc.dir/clean
 
 CMakeFiles/malloc.dir/depend:
-	cd /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/malloc.dir/depend
 
