@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 
+//a block
 struct head {
     u_int16_t bfree;
     u_int16_t bsize;
@@ -15,6 +16,7 @@ struct head {
     struct head *next;
     struct head *prev;
 };
+//useful macros
 #define TRUE 1
 #define FALSE 0
 #define HEAD (sizeof(struct head))
@@ -22,9 +24,14 @@ struct head {
 #define LIMIT(size) (MIN(0) + HEAD + size)
 #define MAGIC(memory) ((struct head*) memory - 1)
 #define HIDE(block) (void*)((struct head*) block + 1)
+#define ALIGN 8
+#define ARENA (64 * 1024)
 
+//function declarations
+struct head* after(struct head*);
+struct head* before(struct head*);
+struct head *split(struct head *block, int size);
 void *dalloc(size_t size);
-
 void dfree();
 
 #endif //MALLOC_DLMALL_H
