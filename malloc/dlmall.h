@@ -6,13 +6,19 @@
 #define MALLOC_DLMALL_H
 
 #include <stdio.h>
+#include <sys/mman.h>
+#include <stdint.h>
+#include <errno.h>
+
+//error handling
+extern int errno;
 
 //a block
 struct head {
-    u_int16_t bfree;
-    u_int16_t bsize;
-    u_int16_t free;
-    u_int16_t size;
+    uint16_t bfree;
+    uint16_t bsize;
+    uint16_t free;
+    uint16_t size;
     struct head *next;
     struct head *prev;
 };
