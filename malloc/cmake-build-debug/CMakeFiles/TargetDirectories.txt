@@ -1,3 +1,3 @@
-/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir

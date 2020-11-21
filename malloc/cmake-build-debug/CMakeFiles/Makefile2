@@ -55,19 +55,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /var/lib/snapd/snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc
+CMAKE_SOURCE_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/malloc.dir/clean
 CMakeFiles/malloc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/malloc.dir/build.make CMakeFiles/malloc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target malloc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target malloc"
 .PHONY : CMakeFiles/malloc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/malloc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/malloc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/malloc.dir/rule
 
 # Convenience name for target.

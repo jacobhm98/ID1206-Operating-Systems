@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c" "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir/dlmall.c.o"
-  "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c" "/home/jacob/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir/test.c.o"
+  "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c" "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir/dlmall.c.o"
+  "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c" "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/cmake-build-debug/CMakeFiles/malloc.dir/test.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

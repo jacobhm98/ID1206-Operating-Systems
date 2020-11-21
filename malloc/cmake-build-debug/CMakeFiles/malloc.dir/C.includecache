@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c
+dlmall.h
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.h
+
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.h
+stdio.h
+-
+sys/mman.h
+-
+stdint.h
+-
+errno.h
+-
+assert.h
+-
+
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/test.c
+dlmall.h
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.h
+

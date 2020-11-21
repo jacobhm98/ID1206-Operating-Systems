@@ -4,8 +4,6 @@
 #include "dlmall.h"
 
 struct head *arena = NULL;
-struct head *flist;
-
 struct head *new() {
     if (arena != NULL) {
         printf("one arena already allocated \n");
@@ -19,26 +17,32 @@ struct head *new() {
         return NULL;
     }
 
+    u_int16_t size = ARENA - 2 * HEAD;
+
     new->bfree = FALSE;
     new->bsize = 0;
     new->free = TRUE;
-    new->size = ARENA - HEAD;
+    new->size = size;
 
     struct head *sentinel = after(new);
     sentinel->bfree = TRUE;
-    sentinel->bsize = ARENA - HEAD;
+    sentinel->bsize = size;
     sentinel->free = FALSE;
     sentinel->size = 0;
+
+    arena = (struct head *) new;
 
     return new;
 }
 
 struct head *after(struct head *block) {
+    //block after starts at end of this entire block (mem size + header size)
     return (struct head *) ((char *) block + block->size + HEAD);
 }
 
 struct head *before(struct head *block) {
-    return (struct head *) ((char *) block - block->bsize - HEAD);
+    //block before this one starts at address minus entire block previous (blocksize + header)
+    return (struct head *) ((char *) block - (block->bsize + HEAD));
 }
 
 struct head *split(struct head *block, int size) {
@@ -51,8 +55,7 @@ struct head *split(struct head *block, int size) {
     splt->size = size;
     splt->free = TRUE;
 
-    struct head *aft = block->next;
-    //why dont we update next and previous pointers here?
+    struct head *aft = after(splt);
     aft->bsize = size;
     return splt;
 }
@@ -77,12 +80,53 @@ void insert(struct head *block) {
     flist = block;
 }
 
-void *dalloc(size_t size) {
+struct head *find(int size) {
+    struct head *found_block = flist;
+    while (found_block->size < size && found_block != NULL) {
+        found_block = found_block->next;
+    }
 
+    //if we have failed to find a block that satisfies requirements in freelist
+    if (found_block == NULL) {
+        return NULL;
+    }
+
+    //if we have found a suitable block, detach it
+    detach(found_block);
+
+    //if we can split the block in 2 and for both blocks size > MIN_SIZE
+    if (found_block->size - size + HEAD > MIN(0)) {
+        struct head *allocated_block = split(found_block, size);
+        insert(found_block);
+        found_block = allocated_block;
+    }
+    found_block->free = FALSE;
+    struct head *block_after_found_block = after(found_block);
+    block_after_found_block->bfree = FALSE;
+    return found_block;
 }
 
-void dfree() {
+size_t adjust(size_t request) {
+    request = MIN(request);
+    return request % ALIGN == 0 ? request : request - (request % ALIGN) + ALIGN;
+}
 
-
+void *dalloc(size_t request) {
+    if (request <= 0) {
+        return NULL;
+    }
+    int size = adjust(request);
+    struct head *taken = find(size);
+    return taken == NULL ? NULL : (char *) taken + HEAD;
+}
+void dfree(void *memory) {
+    if (memory != NULL){
+        struct head *block = (char*) memory - HEAD;
+        struct head *aft = after(block);
+        block->free = TRUE;
+        aft->bfree = TRUE;
+        insert(block);
+    }
+    return;
 }
 
