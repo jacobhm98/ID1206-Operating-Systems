@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <sys/time.h>
 #include "dlmall.h"
 
 int length_of_list();
@@ -11,7 +12,6 @@ void sanity();
 
 #define MAX_REQ_SIZE 5000
 #define MIN_REQ_SIZE 20
-#define SEED 0
 #define MAX_NUM_OF_ALLOTTED_BLOCKS 100
 
 int mem_requests = 0;
@@ -23,11 +23,7 @@ int request_pointer = 0;
 
 int main() {
     flist = new();
-    print_status();
-    perform_memory_requests(10);
-    sanity();
-    print_status();
-    perform_memory_frees(10);
+    perform_memory_requests(40);
     sanity();
     print_status();
 }
@@ -76,16 +72,16 @@ void print_status() {
 }
 
 void perform_memory_requests(int num_of_requests) {
-    srand(SEED);
+    srand(time(0));
     size_t size;
     void *mem_pointer;
     for (int i = 0; i < num_of_requests; ++i) {
         size = generate_random_request_size();
         mem_pointer = dalloc(size);
         if (mem_pointer == NULL) {
-            fprintf(stderr, "error allocating memory");
+            fprintf(stderr, "error allocating memory\n");
             mem_errs++;
-            break;
+            continue;
         }
         mem_requests++;
         struct head *mem_header = (char *) mem_pointer - HEAD;

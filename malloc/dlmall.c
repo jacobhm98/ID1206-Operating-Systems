@@ -82,14 +82,15 @@ void insert(struct head *block) {
 
 struct head *find(int size) {
     struct head *found_block = flist;
-    while (found_block->size < size && found_block != NULL) {
+
+    while (found_block->size < size){
         found_block = found_block->next;
+        //if we have failed to find a block that satisfies requirements in freelist
+        if (found_block == NULL){
+            return NULL;
+        }
     }
 
-    //if we have failed to find a block that satisfies requirements in freelist
-    if (found_block == NULL) {
-        return NULL;
-    }
 
     //if we have found a suitable block, detach it
     detach(found_block);
