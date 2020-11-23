@@ -7,11 +7,13 @@ size_t generate_random_request_size();
 void perform_memory_requests(int);
 void print_status();
 void perform_memory_frees(int);
+void sanity();
 
 #define MAX_REQ_SIZE 5000
 #define MIN_REQ_SIZE 20
 #define SEED 0
-#define MAX_NUM_OF_ALLOTTED_BLOCKS 200
+#define MAX_NUM_OF_ALLOTTED_BLOCKS 100
+
 int mem_requests = 0;
 int mem_frees = 0;
 int mem_errs = 0;
@@ -23,9 +25,23 @@ int main() {
     flist = new();
     print_status();
     perform_memory_requests(10);
+    sanity();
     print_status();
     perform_memory_frees(10);
+    sanity();
     print_status();
+}
+
+void sanity(){
+    struct head *curr = flist;
+    struct head *prev = curr->prev;
+    while(curr != NULL){
+        assert(prev == curr->prev);
+        assert(curr->size % ALIGN == 0);
+        assert(curr->free == TRUE);
+        prev = curr;
+        curr = curr->next;
+    }
 }
 
 //could speed these up and do the calculations for average and length in 1 pass instead of 3,
@@ -57,7 +73,6 @@ void print_status() {
     printf("the length of the freelist is %d\n", length);
     printf("the average size of the entries on the freelist is %f\n", average);
     printf("Total number of memory requests performed: %d, total number of memory frees: %d, current number of allocated memory blocks: %d, number of failed memory requests: %d\n", mem_requests, mem_frees, request_pointer, mem_errs);
-    return;
 }
 
 void perform_memory_requests(int num_of_requests) {
