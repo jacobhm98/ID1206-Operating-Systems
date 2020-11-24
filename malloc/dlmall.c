@@ -53,7 +53,7 @@ struct head *split(struct head *block, int size) {
     splt->bsize = rsize;
     splt->bfree = block->free;
     splt->size = size;
-    splt->free = TRUE;
+    splt->free = FALSE;
 
     struct head *aft = after(splt);
     aft->bsize = size;
@@ -69,6 +69,9 @@ void detach(struct head *block) {
 
     else {
         flist = block->next;
+        if (flist == NULL){
+            fprintf(stderr, "there are no more entries on the freelist\n");
+        }
     }
 }
 
@@ -83,20 +86,20 @@ void insert(struct head *block) {
 struct head *find(int size) {
     struct head *found_block = flist;
 
-    while (found_block->size < size){
+    while (found_block != NULL && found_block->size < size){
         found_block = found_block->next;
-        //if we have failed to find a block that satisfies requirements in freelist
-        if (found_block == NULL){
-            return NULL;
-        }
     }
 
+    //if we have failed to find a block that satisfies requirements in freelist
+    if (found_block == NULL){
+        return NULL;
+    }
 
     //if we have found a suitable block, detach it
     detach(found_block);
 
     //if we can split the block in 2 and for both blocks size > MIN_SIZE
-    if (found_block->size - size + HEAD > MIN(0)) {
+    if (found_block->size > LIMIT(size)) {
         struct head *allocated_block = split(found_block, size);
         insert(found_block);
         found_block = allocated_block;

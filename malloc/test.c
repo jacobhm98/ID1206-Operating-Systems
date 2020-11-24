@@ -23,9 +23,11 @@ int request_pointer = 0;
 
 int main() {
     flist = new();
-    perform_memory_requests(40);
-    sanity();
-    print_status();
+    for (int i = 0; i < 3; ++i) {
+        perform_memory_requests(40);
+        sanity();
+        print_status();
+    }
 }
 
 void sanity(){
