@@ -9,6 +9,7 @@ void perform_memory_requests(int);
 void print_status();
 void perform_memory_frees(int);
 void sanity();
+void free_all_blocks();
 
 #define MAX_REQ_SIZE 5000
 #define MIN_REQ_SIZE 20
@@ -23,11 +24,19 @@ int request_pointer = 0;
 
 int main() {
     flist = new();
-    for (int i = 0; i < 3; ++i) {
-        perform_memory_requests(40);
+    for (int i = 0; i < 100000; ++i) {
+        perform_memory_requests(10);
         sanity();
+        perform_memory_frees(9);
         print_status();
+        if(i % 30 == 0){
+            free_all_blocks();
+        }
     }
+}
+
+void free_all_blocks(){
+  perform_memory_frees(request_pointer);
 }
 
 void sanity(){
