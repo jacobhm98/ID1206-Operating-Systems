@@ -69,10 +69,24 @@ void detach(struct head *block) {
 
     else {
         flist = block->next;
-        if (flist == NULL){
-            fprintf(stderr, "there are no more entries on the freelist\n");
-        }
     }
+}
+
+struct head* merge(struct head *block){
+    struct head *aft = after(block);
+
+    if (block->bfree){
+        detach(before(block));
+        before(block)->size += block->size + HEAD;
+        aft->bsize = before(block)->size;
+        block = before(block);
+    }
+    if (aft->free){
+        detach(aft);
+        block->size += aft->size + HEAD;
+        after(aft)->bsize = block->size;
+    }
+    return block;
 }
 
 void insert(struct head *block) {
@@ -121,11 +135,12 @@ void *dalloc(size_t request) {
     }
     int size = adjust(request);
     struct head *taken = find(size);
-    return taken == NULL ? NULL : (char *) taken + HEAD;
+    return taken == NULL ? NULL : HIDE(taken);
 }
 void dfree(void *memory) {
     if (memory != NULL){
-        struct head *block = (char*) memory - HEAD;
+        struct head *block = MAGIC(memory);
+        block = merge(block);
         struct head *aft = after(block);
         block->free = TRUE;
         aft->bfree = TRUE;

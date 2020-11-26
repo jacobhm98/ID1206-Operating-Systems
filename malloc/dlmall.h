@@ -23,14 +23,22 @@ struct head {
     struct head *next;
     struct head *prev;
 };
+
+//a taken block
+struct taken {
+    uint16_t bfree;
+    uint16_t bsize;
+    uint16_t free;
+    uint16_t size;
+};
 //useful macros
 #define TRUE 1
 #define FALSE 0
-#define HEAD (sizeof(struct head))
-#define MIN(size) (((size) > (8)) ? (size) : (8))
+#define HEAD (sizeof(struct taken))
+#define MIN(size) (((size) > (16)) ? (size) : (16))
 #define LIMIT(size) (MIN(0) + HEAD + size)
-#define MAGIC(memory) ((struct head*) memory - 1)
-#define HIDE(block) (void*)((struct head*) block + 1)
+#define MAGIC(memory) ((struct taken*) memory - 1)
+#define HIDE(block) (void*)((struct taken*) block + 1)
 #define ALIGN 8
 #define ARENA (64 * 1024)
 
@@ -43,7 +51,8 @@ struct head* after(struct head*);
 struct head* before(struct head*);
 struct head *split(struct head *block, int size);
 size_t adjust(size_t request);
-struct head* find(int size);
+struct head *find(int size);
+struct head *merge(struct head*);
 void *dalloc(size_t size);
 void dfree();
 

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.c
+dlmall.h
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.h
+
 /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/malloc/dlmall.h
 stdio.h
 -

@@ -9,7 +9,8 @@ void perform_memory_requests(int);
 void print_status();
 void perform_memory_frees(int);
 void sanity();
-void free_all_blocks();
+int get_random_index(int);
+void shrink_array(int, int);
 
 #define MAX_REQ_SIZE 5000
 #define MIN_REQ_SIZE 20
@@ -24,19 +25,12 @@ int request_pointer = 0;
 
 int main() {
     flist = new();
-    for (int i = 0; i < 100000; ++i) {
+    for (int i = 0; i < 20; ++i) {
         perform_memory_requests(10);
         sanity();
         perform_memory_frees(9);
         print_status();
-        if(i % 30 == 0){
-            free_all_blocks();
-        }
     }
-}
-
-void free_all_blocks(){
-  perform_memory_frees(request_pointer);
 }
 
 void sanity(){
@@ -103,12 +97,27 @@ void perform_memory_requests(int num_of_requests) {
 
 void perform_memory_frees(int num_frees) {
     for (int i = 0; i < num_frees; ++i) {
-        struct head *mem_header = REQUESTS[request_pointer - 1];
+        int entry_to_free = get_random_index(request_pointer - 1);
+        struct head *mem_header = REQUESTS[entry_to_free];
         void *mem_pointer = (char *) mem_header + HEAD;
         dfree(mem_pointer);
+        shrink_array(entry_to_free, request_pointer);
         request_pointer--;
         mem_frees++;
     }
+}
+
+void shrink_array(int start, int end){
+   for (int i = start; i < end; i++){
+       REQUESTS[i] = REQUESTS[i + 1];
+   }
+}
+
+//inclusive of max
+int get_random_index(int max_index){
+   int index = rand();
+  index = index % (max_index + 1);
+  return index;
 }
 
 size_t generate_random_request_size() {
