@@ -23,6 +23,8 @@ struct head *new() {
     new->bsize = 0;
     new->free = TRUE;
     new->size = size;
+    new->next = UINT32_MAX;
+    new->prev = UINT32_MAX;
 
     struct head *sentinel = after(new);
     sentinel->bfree = TRUE;
@@ -33,6 +35,21 @@ struct head *new() {
     arena = (struct head *) new;
 
     return new;
+}
+
+uint32_t getOffset(struct head* block){
+    if (block == NULL){
+        return UINT32_MAX;
+    }
+    return (char*) block - (char*) arena;
+}
+
+struct head* getBlock(uint32_t offset){
+    if(offset == UINT32_MAX){
+        return NULL;
+    }
+    struct head* block = (struct head*)((char*) arena + offset);
+    return block;
 }
 
 struct head *after(struct head *block) {
@@ -61,14 +78,14 @@ struct head *split(struct head *block, int size) {
 }
 
 void detach(struct head *block) {
-    if (block->next != NULL)
-        block->next->prev = block->prev;
+    if (block->next != UINT32_MAX)
+        getBlock(block->next)->prev = block->prev;
 
-    if (block->prev != NULL)
-        block->prev->next = block->next;
+    if (block->prev != UINT32_MAX)
+        getBlock(block->prev)->next = block->next;
 
     else {
-        flist = block->next;
+        flist = getBlock(block->next);
     }
 }
 
@@ -90,10 +107,10 @@ struct head* merge(struct head *block){
 }
 
 void insert(struct head *block) {
-    block->next = flist;
-    block->prev = NULL;
+    block->next = getOffset(flist);
+    block->prev = UINT32_MAX;
     if (flist != NULL)
-        flist->prev = block;
+        flist->prev = getOffset(block);
     flist = block;
 }
 
@@ -101,7 +118,7 @@ struct head *find(int size) {
     struct head *found_block = flist;
 
     while (found_block != NULL && found_block->size < size){
-        found_block = found_block->next;
+        found_block = getBlock(found_block->next);
     }
 
     //if we have failed to find a block that satisfies requirements in freelist

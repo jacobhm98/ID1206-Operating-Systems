@@ -47,16 +47,16 @@ int main() {
     printf("Elapsed: %f seconds\n", (double)(toc - tic) / CLOCKS_PER_SEC);
 }
 
-void write_to_blocks(){
+void write_to_blocks() {
     int message = 42;
-    for (int i = 0; i < request_pointer; ++i){
-        void * mem_block = HIDE(REQUESTS[i]);
+    for (int i = 0; i < request_pointer; ++i) {
+        void *mem_block = HIDE(REQUESTS[i]);
         mem_block = (void *) message;
     }
 }
 
-void perform_small_memory_requests(int num_reqs){
-    int size = 16;
+void perform_small_memory_requests(int num_reqs) {
+    int size = 8;
     for (int i = 0; i < num_reqs; ++i) {
         void *mem_block = dalloc(size);
         struct taken *head = MAGIC(mem_block);
@@ -64,15 +64,16 @@ void perform_small_memory_requests(int num_reqs){
         request_pointer++;
     }
 }
+
 void sanity() {
     struct head *curr = flist;
-    struct head *prev = curr->prev;
+    struct head *prev = getBlock(curr->prev);
     while (curr != NULL) {
-        assert(prev == curr->prev);
+        assert(prev == getBlock(curr->prev));
         assert(curr->size % ALIGN == 0);
         assert(curr->free == TRUE);
         prev = curr;
-        curr = curr->next;
+        curr = getBlock(curr->next);
     }
 }
 
@@ -83,7 +84,7 @@ int length_of_list() {
     struct head *curr = flist;
     while (curr != NULL) {
         ++length;
-        curr = curr->next;
+        curr = getBlock(curr->next);
     }
     return length;
 }
@@ -93,7 +94,7 @@ float average_size() {
     struct head *curr = flist;
     while (curr != NULL) {
         average_size += curr->size;
-        curr = curr->next;
+        curr = getBlock(curr->next);
     }
     return average_size / (float) length_of_list();
 }
