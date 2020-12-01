@@ -57,10 +57,12 @@ void write_to_blocks(){
 
 void perform_small_memory_requests(int num_reqs){
     int size = 16;
-    void * mem_block = dalloc(size);
-    struct taken* head = MAGIC(mem_block);
-    REQUESTS[request_pointer] = head;
-    request_pointer++;
+    for (int i = 0; i < num_reqs; i++) {
+        void *mem_block = dalloc(size);
+        struct taken *head = MAGIC(mem_block);
+        REQUESTS[request_pointer] = head;
+        request_pointer++;
+    }
 }
 void sanity() {
     struct head *curr = flist;
