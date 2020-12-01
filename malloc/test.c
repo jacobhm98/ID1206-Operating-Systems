@@ -50,8 +50,8 @@ int main() {
 void write_to_blocks(){
     int message = 42;
     for (int i = 0; i < request_pointer; ++i){
-        void * mem_block = HIDE(REQUESTS[i]);
-        mem_block = (void *) message;
+        int * mem_block = (int*) HIDE(REQUESTS[i]);
+        *mem_block = message;
     }
 }
 
