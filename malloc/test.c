@@ -32,7 +32,7 @@ void write_to_blocks();
 int mem_requests = 0;
 int mem_frees = 0;
 int mem_errs = 0;
-struct taken *REQUESTS[MAX_NUM_OF_ALLOTTED_BLOCKS];
+struct head *REQUESTS[MAX_NUM_OF_ALLOTTED_BLOCKS];
 int request_pointer = 0;
 
 
@@ -60,7 +60,7 @@ void perform_small_memory_requests(int num_reqs) {
     int size = 8;
     for (int i = 0; i < num_reqs; ++i) {
         void *mem_block = dalloc(size);
-        struct taken *head = MAGIC(mem_block);
+        struct head *head = MAGIC(mem_block);
         REQUESTS[request_pointer] = head;
         request_pointer++;
     }
