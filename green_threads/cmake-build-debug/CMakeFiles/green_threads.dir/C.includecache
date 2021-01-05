@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/green.c
+assert.h
+-
+stdlib.h
+-
+green.h
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/green.h
+
+/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/green.h
+ucontext.h
+-
+
