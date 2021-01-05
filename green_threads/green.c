@@ -12,7 +12,7 @@
 static ucontext_t main_cntx = {0};
 static green_t main_green = {&main_cntx, NULL, NULL, NULL, NULL, NULL, FALSE};
 static green_t *running = &main_green;
-static green_t *head = NULL;
+green_t *head = NULL;
 
 static void init() __attribute__((constructor));
 
@@ -71,7 +71,7 @@ void green_thread() {
 int green_yield() {
     green_t *susp = running;
     //add susp to ready queue;
-    assert(enqueue(susp) == 0);
+    enqueue(susp);
     //select the next thread for execution
     green_t *next = dequeue();
     assert(next != NULL);
@@ -116,5 +116,6 @@ green_t *dequeue() {
     }
     green_t *node = head;
     head = node->next;
+    node->next = NULL;
     return node;
 }
