@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
+				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
+				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
+				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="green_threads">
-				<Option output="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/green_threads" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
+				<Option output="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/green_threads" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 green_threads"/>
-					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 green_threads"/>
+					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="green_threads/fast">
-				<Option output="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/green_threads" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
+				<Option output="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/green_threads" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,23 +71,23 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 green_threads/fast"/>
-					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 green_threads/fast"/>
+					<CompileFile command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j12 -f &quot;/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/green.c">
+		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.c">
 			<Option target="green_threads"/>
 		</Unit>
-		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/green.h">
+		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.h">
 			<Option target="green_threads"/>
 		</Unit>
-		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/main.c">
+		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/main.c">
 			<Option target="green_threads"/>
 		</Unit>
-		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/CMakeLists.txt">
+		<Unit filename="/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

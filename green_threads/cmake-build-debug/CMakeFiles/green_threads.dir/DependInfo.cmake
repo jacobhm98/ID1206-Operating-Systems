@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/green.c" "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles/green_threads.dir/green.c.o"
-  "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/main.c" "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles/green_threads.dir/main.c.o"
+  "/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.c" "/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles/green_threads.dir/green.c.o"
+  "/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/main.c" "/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles/green_threads.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

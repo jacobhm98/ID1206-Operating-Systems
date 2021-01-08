@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads
+# Install script for directory: /Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -64,10 +64,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads
+CMAKE_SOURCE_DIR = /Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/green_threads.dir/clean
 CMakeFiles/green_threads.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/green_threads.dir/build.make CMakeFiles/green_threads.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/green_threads.dir/build.make CMakeFiles/green_threads.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target green_threads"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target green_threads"
 .PHONY : CMakeFiles/green_threads.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/green_threads.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/green_threads.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/green_threads.dir/rule
 
 # Convenience name for target.
