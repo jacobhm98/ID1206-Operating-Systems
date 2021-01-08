@@ -5,7 +5,7 @@
 #ifndef GREEN_THREADS_GREEN_H
 #define GREEN_THREADS_GREEN_H
 
-#define _XOPEN_SOURCE 600
+#define _XOPEN_SOURCE
 #include <ucontext.h>
 
 typedef struct green_t {
