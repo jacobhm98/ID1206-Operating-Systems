@@ -100,7 +100,7 @@ int green_join(green_t *thread, void **res) {
 
 int enqueue(green_t *head, green_t *node) {
     if (head == NULL) {
-        head = node;
+        *head = *node;
         return 0;
     }
     green_t *last_node = head;
@@ -116,7 +116,7 @@ green_t *dequeue(green_t *head) {
         return NULL;
     }
     green_t *node = head;
-    head = node->next;
+    *head = *node->next;
     node->next = NULL;
     return node;
 }
