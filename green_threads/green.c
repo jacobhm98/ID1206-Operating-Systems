@@ -97,7 +97,7 @@ void green_thread() {
     this->retval = result;
     this->zombie = TRUE;
     green_t *next = dequeue(&readyQueue);
-    
+
     sigprocmask(SIG_UNBLOCK, &block, NULL);
 
     running = next;
