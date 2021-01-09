@@ -7,7 +7,7 @@ void first_small_test();
 
 void *test_yield(void *arg){
     int i = *(int*)arg;
-    int loop = 4;
+    int loop = 1000000;
     while (loop > 0){
         printf("thread %d: %d\n", i, loop);
         loop--;
