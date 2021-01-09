@@ -7,7 +7,7 @@ void first_small_test();
 
 void *test_yield(void *arg){
     int i = *(int*)arg;
-    int loop = 1000000;
+    int loop = 4;
     while (loop > 0){
         printf("thread %d: %d\n", i, loop);
         loop--;
@@ -29,7 +29,7 @@ int flag = 0;
 green_cond_t cond;
 void *test_cond(void *arg){
     int id = *(int*) arg;
-    int loop = 4;
+    int loop = 100000;
     while (loop > 0){
         if (flag == id){
             printf("thread %d: %d\n", id, loop);
