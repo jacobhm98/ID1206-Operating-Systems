@@ -4,15 +4,22 @@
 #include <assert.h>
 #include <stdlib.h>
 #include "green.h"
+#include <signal.h>
+#include <sys/time.h>
 
 #define FALSE 0
 #define TRUE 1
 #define STACK_SIZE 4096
+#define PERIOD 100
+
 
 static ucontext_t main_cntx = {0};
 static green_t main_green = {&main_cntx, NULL, NULL, NULL, NULL, NULL, FALSE};
 static green_t *running = &main_green;
 green_t* readyQueue = NULL;
+static sigset_t block;
+
+void timer_handler(int);
 
 static void init() __attribute__((constructor));
 
@@ -24,7 +31,31 @@ green_t *dequeue(green_t**);
 
 void init() {
     getcontext(&main_cntx);
+
+    sigemptyset(&block);
+    sigaddset(&block, SIGVTALRM);
+
+    struct sigaction act = {0};
+    struct timeval interval;
+    struct itimerval period;
+
+    act.sa_handler = timer_handler;
+    assert(sigaction(SIGVTALRM, &act, NULL) == 0);
+    interval.tv_sec = 0;
+    interval.tv_usec = PERIOD;
+    period.it_interval = interval;
+    period.it_value = interval;
+    setitimer(ITIMER_VIRTUAL, &period, NULL);
 }
+
+void timer_handler(int sig){
+    green_t *susp = running;
+    enqueue(&readyQueue, susp);
+    green_t *next = dequeue(&readyQueue);
+    running = next;
+    swapcontext(susp->context, next->context);
+}
+
 
 int green_create(green_t *new, void *(*fun)(void *), void *arg) {
     ucontext_t *cntx = (ucontext_t *) malloc(sizeof(ucontext_t));
