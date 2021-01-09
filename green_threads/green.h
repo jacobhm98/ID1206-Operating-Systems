@@ -23,7 +23,7 @@ int green_yield();
 int green_join(green_t *thread, void** val);
 
 typedef struct green_cond_t{
-    green_t *head;
+    green_t **head;
 } green_cond_t;
 
 void green_cond_init(green_cond_t*);

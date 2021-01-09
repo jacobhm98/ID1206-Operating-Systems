@@ -119,3 +119,35 @@ green_t *dequeue(green_t **head) {
     node->next = NULL;
     return node;
 }
+
+int contains(green_t **head, green_t *node){
+    if (*head == NULL){
+        return FALSE;
+    }
+    green_t *curr_node = *head;
+    while (curr_node->next != NULL){
+        if (curr_node == node){
+            return TRUE;
+        }
+        curr_node = curr_node->next;
+    }
+    if (curr_node == node)
+        return TRUE;
+    return FALSE;
+}
+
+void green_cond_init(green_cond_t *cond){
+    *cond->head = NULL;
+}
+
+void green_cond_wait(green_cond_t *cond){
+   green_t *this = running;
+   enqueue(cond->head, this);
+   while(contains(cond->head, this)){
+       green_yield();
+   }
+}
+
+void green_cond_signal(green_cond_t *cond){
+    dequeue(cond->head);
+}
