@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.c
-assert.h
--
-stdlib.h
--
-green.h
-/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.h
-signal.h
--
-sys/time.h
--
-
 /Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.h
 ucontext.h
 -
