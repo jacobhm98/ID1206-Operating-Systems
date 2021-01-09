@@ -12,15 +12,15 @@
 static ucontext_t main_cntx = {0};
 static green_t main_green = {&main_cntx, NULL, NULL, NULL, NULL, NULL, FALSE};
 static green_t *running = &main_green;
-green_t *readyQueue = NULL;
+green_t* readyQueue = NULL;
 
 static void init() __attribute__((constructor));
 
 void green_thread();
 
-int enqueue(green_t*, green_t*);
+int enqueue(green_t**, green_t*);
 
-green_t *dequeue(green_t*);
+green_t *dequeue(green_t**);
 
 void init() {
     getcontext(&main_cntx);
@@ -44,8 +44,7 @@ int green_create(green_t *new, void *(*fun)(void *), void *arg) {
     new->retval = NULL;
     new->zombie = FALSE;
 
-    int rc = enqueue(readyQueue, new);
-    assert(rc == 0);
+    enqueue(&readyQueue, new);
 
     return 0;
 }
@@ -57,12 +56,12 @@ void green_thread() {
 
     //place waiting (joining) thread in ready queue
     if (this->join != NULL){
-        enqueue(readyQueue, this->join);
+        enqueue(&readyQueue, this->join);
     }
 
     this->retval = result;
     this->zombie = TRUE;
-    green_t *next = dequeue(readyQueue);
+    green_t *next = dequeue(&readyQueue);
 
     running = next;
     setcontext(next->context);
@@ -71,9 +70,9 @@ void green_thread() {
 int green_yield() {
     green_t *susp = running;
     //add susp to ready queue;
-    enqueue(readyQueue, susp);
+    enqueue(&readyQueue, susp);
     //select the next thread for execution
-    green_t *next = dequeue(readyQueue);
+    green_t *next = dequeue(&readyQueue);
     assert(next != NULL);
 
     running = next;
@@ -88,7 +87,7 @@ int green_join(green_t *thread, void **res) {
         thread->join = susp;
 
         //select the next thread for execution
-        green_t *next = dequeue(readyQueue);
+        green_t *next = dequeue(&readyQueue);
         assert(next != NULL);
         running = next;
         swapcontext(susp->context, next->context);
@@ -98,12 +97,12 @@ int green_join(green_t *thread, void **res) {
     return 0;
 }
 
-int enqueue(green_t *head, green_t *node) {
-    if (head == NULL) {
-        *head = *node;
+int enqueue(green_t **head, green_t *node) {
+    if (*head == NULL) {
+        *head = node;
         return 0;
     }
-    green_t *last_node = head;
+    green_t *last_node = *head;
     while (last_node->next != NULL) {
         last_node = last_node->next;
     }
@@ -111,12 +110,12 @@ int enqueue(green_t *head, green_t *node) {
     return 0;
 }
 
-green_t *dequeue(green_t *head) {
-    if (head == NULL) {
+green_t *dequeue(green_t **head) {
+    if (*head == NULL) {
         return NULL;
     }
-    green_t *node = head;
-    *head = *node->next;
+    green_t *node = *head;
+    *head = node->next;
     node->next = NULL;
     return node;
 }
