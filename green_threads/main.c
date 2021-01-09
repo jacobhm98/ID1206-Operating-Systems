@@ -68,5 +68,6 @@ void test_race_cond(){
 
 int main() {
     test_race_cond();
+    printf("value of counter %d\n", counter);
     return 0;
 }
