@@ -111,7 +111,7 @@ int enqueue(green_t **head, green_t *node) {
 }
 
 green_t *dequeue(green_t **head) {
-    if (*head == NULL || head == NULL) {
+    if (*head == NULL) {
         return NULL;
     }
     green_t *node = *head;
@@ -137,7 +137,7 @@ int contains(green_t **head, green_t *node){
 }
 
 void green_cond_init(green_cond_t *cond){
-    *cond->head = NULL;
+    cond->head = malloc(sizeof(green_t*));
 }
 
 void green_cond_wait(green_cond_t *cond){
