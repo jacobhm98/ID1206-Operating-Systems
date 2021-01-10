@@ -59,7 +59,7 @@ void timer_handler(int sig) {
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
     running = next;
-    write(1, "timer handler intervention", 26);
+    write(1, "timer handler intervention\n", 26);
 
     clock_t executionEnd = clock();
     double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
