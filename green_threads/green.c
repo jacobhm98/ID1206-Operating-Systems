@@ -61,7 +61,7 @@ void timer_handler(int sig) {
 
 int green_create(green_t *new, void *(*fun)(void *), void *arg) {
     sigprocmask(SIG_BLOCK, &block, NULL);
-    write(1, "block\n", 10);
+    write(1, "block\n", 7);
     ucontext_t *cntx = (ucontext_t *) malloc(sizeof(ucontext_t));
     getcontext(cntx);
 
@@ -81,7 +81,7 @@ int green_create(green_t *new, void *(*fun)(void *), void *arg) {
 
     enqueue(&readyQueue, new);
 
-    write(1, "unblock\n", 10);
+    write(1, "unblock\n", 9);
     sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
@@ -92,7 +92,7 @@ void green_thread() {
     void *result = (*this->fun)(this->arg);
 
     sigprocmask(SIG_BLOCK, &block, NULL);
-    write(1, "block\n", 10);
+    write(1, "block\n", 7);
 
     //place waiting (joining) thread in ready queue
     if (this->join != NULL) {
@@ -103,7 +103,7 @@ void green_thread() {
     this->zombie = TRUE;
     green_t *next = dequeue(&readyQueue);
 
-    write(1, "unblock\n", 10);
+    write(1, "unblock\n", 9);
     sigprocmask(SIG_UNBLOCK, &block, NULL);
 
     running = next;
@@ -112,7 +112,7 @@ void green_thread() {
 
 int green_yield() {
     sigprocmask(SIG_BLOCK, &block, NULL);
-    write(1, "block\n", 10);
+    write(1, "block\n", 7);
     green_t *susp = running;
     //add susp to ready queue;
     enqueue(&readyQueue, susp);
@@ -122,7 +122,7 @@ int green_yield() {
 
     running = next;
     swapcontext(susp->context, next->context);
-    write(1, "unblock\n", 10);
+    write(1, "unblock\n", 9);
     sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
