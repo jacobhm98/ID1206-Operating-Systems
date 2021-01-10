@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <zconf.h>
 #include "green.h"
 
 void *test_cond(void *arg);
@@ -58,6 +59,7 @@ void *increment_counter(void *arg) {
     while (loop > 0) {
         counter++;
         loop--;
+        write(1, "counter incremented", 40);
     }
 }
 

@@ -6,6 +6,7 @@
 #include "green.h"
 #include <signal.h>
 #include <sys/time.h>
+#include <zconf.h>
 
 #define FALSE 0
 #define TRUE 1
@@ -53,6 +54,7 @@ void timer_handler(int sig) {
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
     running = next;
+    write(1, "timer handler intervention", 40);
     swapcontext(susp->context, next->context);
 }
 
