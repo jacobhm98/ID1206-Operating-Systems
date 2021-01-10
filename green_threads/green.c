@@ -8,6 +8,7 @@
 #include <sys/time.h>
 #include <zconf.h>
 #include <stdio.h>
+#include <time.h>
 
 #define FALSE 0
 #define TRUE 1
