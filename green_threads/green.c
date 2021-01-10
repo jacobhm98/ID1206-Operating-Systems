@@ -7,12 +7,12 @@
 #include <signal.h>
 #include <sys/time.h>
 #include <zconf.h>
-#include <printf.h>
+#include <stdio.h>
 
 #define FALSE 0
 #define TRUE 1
 #define STACK_SIZE 4096
-#define PERIOD 1
+#define PERIOD 1000
 
 
 static ucontext_t main_cntx = {0};
@@ -61,7 +61,7 @@ void timer_handler(int sig) {
     write(1, "timer handler intervention", 26);
 
     clock_t executionEnd = clock();
-    double time_spent = (double) executionEnd - executionBegin;
+    double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
     printf("timer period %f\n", time_spent);
     executionBegin = executionEnd;
     swapcontext(susp->context, next->context);
