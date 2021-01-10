@@ -52,7 +52,7 @@ void *test_cond(void *arg) {
     }
 }
 
-int counter = 0;
+long counter = 0;
 
 void *increment_counter(void *arg) {
     long loop = 100000000000;
