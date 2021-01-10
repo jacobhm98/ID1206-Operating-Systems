@@ -59,7 +59,7 @@ void *increment_counter(void *arg) {
     while (loop > 0) {
         counter++;
         loop--;
-        write(1, "counter incremented", 40);
+        write(1, "counter incremented", 20);
     }
 }
 
