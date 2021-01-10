@@ -54,12 +54,11 @@ void *test_cond(void *arg) {
 int counter = 0;
 
 void *increment_counter(void *arg) {
-    int loop = 10000000000000000;
+    long loop = 100000000000;
     while (loop > 0) {
         counter++;
         loop--;
     }
-
 }
 
 void test_race_cond() {

@@ -16,7 +16,7 @@
 static ucontext_t main_cntx = {0};
 static green_t main_green = {&main_cntx, NULL, NULL, NULL, NULL, NULL, FALSE};
 static green_t *running = &main_green;
-green_t* readyQueue = NULL;
+green_t *readyQueue = NULL;
 static sigset_t block;
 
 void timer_handler(int);
@@ -25,9 +25,9 @@ static void init() __attribute__((constructor));
 
 void green_thread();
 
-int enqueue(green_t**, green_t*);
+int enqueue(green_t **, green_t *);
 
-green_t *dequeue(green_t**);
+green_t *dequeue(green_t **);
 
 void init() {
     getcontext(&main_cntx);
@@ -48,7 +48,7 @@ void init() {
     setitimer(ITIMER_VIRTUAL, &period, NULL);
 }
 
-void timer_handler(int sig){
+void timer_handler(int sig) {
     green_t *susp = running;
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
@@ -90,7 +90,7 @@ void green_thread() {
     sigprocmask(SIG_BLOCK, &block, NULL);
 
     //place waiting (joining) thread in ready queue
-    if (this->join != NULL){
+    if (this->join != NULL) {
         enqueue(&readyQueue, this->join);
     }
 
@@ -159,13 +159,13 @@ green_t *dequeue(green_t **head) {
     return node;
 }
 
-int contains(green_t **head, green_t *node){
-    if (*head == NULL){
+int contains(green_t **head, green_t *node) {
+    if (*head == NULL) {
         return FALSE;
     }
     green_t *curr_node = *head;
-    while (curr_node->next != NULL){
-        if (curr_node == node){
+    while (curr_node->next != NULL) {
+        if (curr_node == node) {
             return TRUE;
         }
         curr_node = curr_node->next;
@@ -175,18 +175,18 @@ int contains(green_t **head, green_t *node){
     return FALSE;
 }
 
-void green_cond_init(green_cond_t *cond){
-    cond->head = malloc(sizeof(green_t*));
+void green_cond_init(green_cond_t *cond) {
+    cond->head = malloc(sizeof(green_t *));
 }
 
-void green_cond_wait(green_cond_t *cond){
-   green_t *this = running;
-   enqueue(cond->head, this);
-   while(contains(cond->head, this)){
-       green_yield();
-   }
+void green_cond_wait(green_cond_t *cond) {
+    green_t *this = running;
+    enqueue(cond->head, this);
+    while (contains(cond->head, this)) {
+        green_yield();
+    }
 }
 
-void green_cond_signal(green_cond_t *cond){
+void green_cond_signal(green_cond_t *cond) {
     dequeue(cond->head);
 }
