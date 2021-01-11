@@ -185,6 +185,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     sigprocmask(SIG_BLOCK, &block, NULL);
     green_t *this = running;
     enqueue(cond->waiting, this);
+    printf("I am placed on the cond waitlist\n");
     if (mutex != NULL){
         mutex->taken = FALSE;
         enqueue(&readyQueue, *mutex->suspended);
@@ -192,7 +193,9 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     }
     green_t *next = dequeue(&readyQueue);
     running = next;
+    printf("i will schedule another thread\n");
     swapcontext(this->context, next->context);
+    printf("i have woken up from my slumber\n");
     if (mutex != NULL){
         if (mutex->taken){
             enqueue(mutex->suspended, this);
