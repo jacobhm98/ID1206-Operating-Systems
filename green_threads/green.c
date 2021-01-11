@@ -61,6 +61,7 @@ void timer_handler(int sig){
     green_t *next = dequeue(&readyQueue);
     running = next;
 
+    write(1, "timer interrupt\n", strlen("timer interrupt\n"));
    // clock_t executionEnd = clock();
    // double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
    // time_spent = time_spent * 1000;
