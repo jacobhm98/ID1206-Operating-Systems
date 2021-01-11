@@ -62,20 +62,11 @@ void timer_handler(int sig){
     running = next;
 
     write(1, "timer interrupt\n", strlen("timer interrupt\n"));
-   // clock_t executionEnd = clock();
-   // double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
-   // time_spent = time_spent * 1000;
-   // char buf[30];
-   // snprintf(buf, 30, "this is timer period: %f\n", time_spent);
-   // write(1, buf, 30);
-   // executionBegin = executionEnd;
-
     swapcontext(susp->context, next->context);
 }
 
 
 int green_create(green_t *new, void *(*fun)(void *), void *arg) {
-    sigprocmask(SIG_BLOCK, &block, NULL);
     ucontext_t *cntx = (ucontext_t *) malloc(sizeof(ucontext_t));
     getcontext(cntx);
 
@@ -95,7 +86,6 @@ int green_create(green_t *new, void *(*fun)(void *), void *arg) {
 
     enqueue(&readyQueue, new);
 
-    sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
 
@@ -104,7 +94,6 @@ void green_thread() {
 
     void *result = (*this->fun)(this->arg);
 
-    sigprocmask(SIG_BLOCK, &block, NULL);
 
     //place waiting (joining) thread in ready queue
     if (this->join != NULL){
@@ -115,14 +104,12 @@ void green_thread() {
     this->zombie = TRUE;
     green_t *next = dequeue(&readyQueue);
     
-    sigprocmask(SIG_UNBLOCK, &block, NULL);
 
     running = next;
     setcontext(next->context);
 }
 
 int green_yield() {
-    sigprocmask(SIG_BLOCK, &block, NULL);
     green_t *susp = running;
     //add susp to ready queue;
     enqueue(&readyQueue, susp);
@@ -132,7 +119,6 @@ int green_yield() {
 
     running = next;
     swapcontext(susp->context, next->context);
-    sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
 
