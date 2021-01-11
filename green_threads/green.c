@@ -9,6 +9,7 @@
 #include <zconf.h>
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
 #define FALSE 0
 #define TRUE 1
@@ -59,11 +60,13 @@ void timer_handler(int sig){
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
     running = next;
-    write(1, "timer handler intervention\n", 27);
 
     clock_t executionEnd = clock();
     double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
-    //printf("timer period %f\n", time_spent);
+    time_spent = time_spent * 1000;
+    char buf[30];
+    snprintf(buf, 30, "this is timer period: %f\n", time_spent);
+    write(1, buf, 30);
     executionBegin = executionEnd;
     swapcontext(susp->context, next->context);
 }
