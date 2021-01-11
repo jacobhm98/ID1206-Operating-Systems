@@ -153,8 +153,9 @@ int enqueue(green_t **head, green_t *node) {
 }
 
 green_t *dequeue(green_t **head) {
-    printf("entered dequeue");
+    printf("entered dequeue\n");
     if (*head == NULL) {
+        printf("returning null from deq\n");
         return NULL;
     }
     green_t *node = *head;
