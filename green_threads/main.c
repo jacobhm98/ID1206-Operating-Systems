@@ -66,8 +66,8 @@ void *test_cond(void *arg) {
     int id = *(int *) arg;
     int loop = 100000;
     while (loop > 0) {
+        green_mutex_lock(&mutex);
         if (flag == id) {
-            green_mutex_lock(&mutex);
             printf("thread %d: %d\n", id, loop);
             loop--;
             flag = (id + 1) % 2;

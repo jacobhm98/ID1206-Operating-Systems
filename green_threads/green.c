@@ -209,7 +209,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
                 swapcontext(this->context, next->context);
             }
         } else {
-            printf("we take the mutex and leave the function");
+            printf("we take the mutex and leave the function\n");
             mutex->taken = TRUE;
         }
     }
