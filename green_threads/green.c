@@ -9,6 +9,7 @@
 #include <zconf.h>
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
 #define FALSE 0
 #define TRUE 1
@@ -28,11 +29,9 @@ static void init() __attribute__((constructor));
 
 void green_thread();
 
-int enqueue(green_t **, green_t *);
+int enqueue(green_t**, green_t*);
 
-green_t *dequeue(green_t **);
-
-clock_t  executionBegin;
+green_t *dequeue(green_t**);
 
 void init() {
     getcontext(&main_cntx);
@@ -51,7 +50,6 @@ void init() {
     period.it_interval = interval;
     period.it_value = interval;
     setitimer(ITIMER_VIRTUAL, &period, NULL);
-    executionBegin = clock();
 }
 
 void timer_handler(int sig) {
@@ -59,19 +57,14 @@ void timer_handler(int sig) {
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
     running = next;
-    write(1, "timer handler intervention\n", 27);
 
-    clock_t executionEnd = clock();
-    double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
-    printf("timer period %f\n", time_spent);
-    executionBegin = executionEnd;
+    write(1, "timer interrupt\n", strlen("timer interrupt\n"));
     swapcontext(susp->context, next->context);
 }
 
 
 int green_create(green_t *new, void *(*fun)(void *), void *arg) {
     sigprocmask(SIG_BLOCK, &block, NULL);
-    write(1, "block\n", 7);
     ucontext_t *cntx = (ucontext_t *) malloc(sizeof(ucontext_t));
     getcontext(cntx);
 
@@ -91,7 +84,6 @@ int green_create(green_t *new, void *(*fun)(void *), void *arg) {
 
     enqueue(&readyQueue, new);
 
-    write(1, "unblock\n", 9);
     sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
@@ -102,7 +94,6 @@ void green_thread() {
     void *result = (*this->fun)(this->arg);
 
     sigprocmask(SIG_BLOCK, &block, NULL);
-    write(1, "block\n", 7);
 
     //place waiting (joining) thread in ready queue
     if (this->join != NULL) {
@@ -113,8 +104,6 @@ void green_thread() {
     this->zombie = TRUE;
     green_t *next = dequeue(&readyQueue);
 
-    write(1, "unblock\n", 9);
-    sigprocmask(SIG_UNBLOCK, &block, NULL);
 
     running = next;
     setcontext(next->context);
@@ -122,7 +111,6 @@ void green_thread() {
 
 int green_yield() {
     sigprocmask(SIG_BLOCK, &block, NULL);
-    write(1, "block\n", 7);
     green_t *susp = running;
     //add susp to ready queue;
     enqueue(&readyQueue, susp);
@@ -132,7 +120,6 @@ int green_yield() {
 
     running = next;
     swapcontext(susp->context, next->context);
-    write(1, "unblock\n", 9);
     sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
