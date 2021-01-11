@@ -64,7 +64,6 @@ void timer_handler(int sig) {
 
 
 int green_create(green_t *new, void *(*fun)(void *), void *arg) {
-    sigprocmask(SIG_BLOCK, &block, NULL);
     ucontext_t *cntx = (ucontext_t *) malloc(sizeof(ucontext_t));
     getcontext(cntx);
 
@@ -84,7 +83,6 @@ int green_create(green_t *new, void *(*fun)(void *), void *arg) {
 
     enqueue(&readyQueue, new);
 
-    sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
 
@@ -93,7 +91,6 @@ void green_thread() {
 
     void *result = (*this->fun)(this->arg);
 
-    sigprocmask(SIG_BLOCK, &block, NULL);
 
     //place waiting (joining) thread in ready queue
     if (this->join != NULL) {
