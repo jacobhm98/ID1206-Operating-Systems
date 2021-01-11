@@ -13,7 +13,7 @@
 #define FALSE 0
 #define TRUE 1
 #define STACK_SIZE 4096
-#define PERIOD 1
+#define PERIOD 100
 
 
 static ucontext_t main_cntx = {0};
@@ -189,10 +189,9 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     if (mutex != NULL) {
         green_mutex_unlock(mutex);
         sigprocmask(SIG_BLOCK, &block, NULL);
+        printf("mutex released\n");
     }
-    printf("mutex released\n");
     while (contains(cond->waiting, this)) {
-        enqueue(&readyQueue, this);
         printf("suspended in cv\n");
         green_t *next = dequeue(&readyQueue);
         swapcontext(this->context, next->context);
@@ -218,6 +217,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
 
 void green_cond_signal(green_cond_t *cond) {
     enqueue(&readyQueue, dequeue(cond->waiting));
+    printf("waking up a thread from cv suspension\n");
 }
 
 int green_mutex_init(green_mutex_t *mutex) {
