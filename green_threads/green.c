@@ -13,7 +13,7 @@
 #define FALSE 0
 #define TRUE 1
 #define STACK_SIZE 4096
-#define PERIOD 1000
+#define PERIOD 100
 
 
 static ucontext_t main_cntx = {0};

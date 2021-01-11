@@ -73,7 +73,7 @@ void test_race_cond() {
 }
 
 int main() {
-    test_race_cond();
+    first_small_test();
     printf("value of counter %ld\n", counter);
     return 0;
 }
