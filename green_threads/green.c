@@ -137,7 +137,6 @@ int green_join(green_t *thread, void **res) {
         swapcontext(susp->context, next->context);
     }
     res = thread->retval;
-    free(thread->context->uc_stack.ss_sp);
     return 0;
 }
 
