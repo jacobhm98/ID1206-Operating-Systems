@@ -56,20 +56,19 @@ void init() {
 }
 
 void timer_handler(int sig){
-    sigprocmask(SIG_BLOCK, &block, NULL);
     green_t *susp = running;
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
     running = next;
 
-    clock_t executionEnd = clock();
-    double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
-    time_spent = time_spent * 1000;
-    char buf[30];
-    snprintf(buf, 30, "this is timer period: %f\n", time_spent);
-    write(1, buf, 30);
-    executionBegin = executionEnd;
-    sigprocmask(SIG_UNBLOCK, &block, NULL);
+   // clock_t executionEnd = clock();
+   // double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
+   // time_spent = time_spent * 1000;
+   // char buf[30];
+   // snprintf(buf, 30, "this is timer period: %f\n", time_spent);
+   // write(1, buf, 30);
+   // executionBegin = executionEnd;
+
     swapcontext(susp->context, next->context);
 }
 
