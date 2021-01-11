@@ -1,9 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "green.h"
 
 void *test_cond(void *arg);
 void *test_yield(void *arg);
 void *increment_counter(void *arg);
+void *mutex_test(void *arg);
 void first_small_test();
 
 int flag = 0;
@@ -27,15 +28,26 @@ void first_small_test() {
     int a1 = 1;
     int a2 = 2;
     int a3 = 3;
-    green_create(&g0, increment_counter, &a0);
-    green_create(&g1, increment_counter, &a1);
-    green_create(&g2, increment_counter, &a2);
-    green_create(&g3, increment_counter, &a3);
+    green_create(&g0, mutex_test, &a0);
+    green_create(&g1, mutex_test, &a1);
+    green_create(&g2, mutex_test, &a2);
+    green_create(&g3, mutex_test, &a3);
     green_join(&g0, NULL);
     green_join(&g1, NULL);
     green_join(&g2, NULL);
     green_join(&g3, NULL);
     printf("value of counter %d\n", counter);
+}
+void *mutex_test(void *arg){
+    int id = *(int*) arg;
+    int loop = 1000;
+    green_mutex_lock(&mutex);
+    while (loop > 0){
+        loop--;
+        printf("thread %d is here\n", id);
+    }
+    green_mutex_unlock(&mutex);
+    return NULL;
 }
 void *increment_counter(void *arg){
     int id = *(int*) arg;
