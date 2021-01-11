@@ -6,6 +6,9 @@
 #include "green.h"
 #include <signal.h>
 #include <sys/time.h>
+#include <zconf.h>
+#include <stdio.h>
+#include <time.h>
 
 #define FALSE 0
 #define TRUE 1
@@ -29,6 +32,8 @@ int enqueue(green_t**, green_t*);
 
 green_t *dequeue(green_t**);
 
+clock_t  executionBegin;
+
 void init() {
     getcontext(&main_cntx);
 
@@ -46,6 +51,7 @@ void init() {
     period.it_interval = interval;
     period.it_value = interval;
     setitimer(ITIMER_VIRTUAL, &period, NULL);
+    executionBegin = clock();
 }
 
 void timer_handler(int sig){
@@ -53,6 +59,12 @@ void timer_handler(int sig){
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
     running = next;
+    write(1, "timer handler intervention\n", 27);
+
+    clock_t executionEnd = clock();
+    double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
+    printf("timer period %f\n", time_spent);
+    executionBegin = executionEnd;
     swapcontext(susp->context, next->context);
 }
 
