@@ -137,7 +137,9 @@ int green_join(green_t *thread, void **res) {
 }
 
 int enqueue(green_t **head, green_t *node) {
+    printf("we are in enq\n");
     if (node == NULL) {
+        printf("we should be returning here\n");
         return 0;
     }
     if (*head == NULL) {
@@ -228,8 +230,6 @@ void green_cond_signal(green_cond_t *cond) {
     printf("length of cond q: %d\n", list_length(cond->waiting));
     green_t *wake_up = dequeue(cond->waiting);
     printf("we are back from deq\n");
-    assert(wake_up != NULL);
-    printf("we passed the assertion\n");
     enqueue(&readyQueue, wake_up);
 }
 
