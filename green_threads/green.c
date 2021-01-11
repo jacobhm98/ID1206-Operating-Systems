@@ -7,8 +7,6 @@
 #include <signal.h>
 #include <sys/time.h>
 #include <zconf.h>
-#include <stdio.h>
-#include <time.h>
 #include <string.h>
 
 #define FALSE 0
@@ -195,6 +193,7 @@ void green_cond_signal(green_cond_t *cond) {
 int green_mutex_init(green_mutex_t *mutex) {
     mutex->taken = FALSE;
     mutex->suspended = malloc(sizeof(green_t *));
+    *mutex->suspended = NULL;
 }
 
 int green_mutex_lock(green_mutex_t *mutex) {
