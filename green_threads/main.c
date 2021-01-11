@@ -37,7 +37,7 @@ void first_small_test() {
 }
 void *increment_counter(void *arg){
     int id = *(int*) arg;
-    int loop = 1000000;
+    int loop = 100000000;
     while (loop > 0){
             //printf("thread %d: %d\n", id, loop);
             loop--;
