@@ -18,20 +18,26 @@ void *test_yield(void *arg){
     }
 }
 
+counter = 0;
 void first_small_test() {
-    green_t g0, g1;
+    green_t g0, g1, g2, g3;
     int a0 = 0;
     int a1 = 1;
+    int a2 = 2;
+    int a3 = 3;
     green_create(&g0, increment_counter, &a0);
     green_create(&g1, increment_counter, &a1);
+    green_create(&g2, increment_counter, &a2);
+    green_create(&g3, increment_counter, &a3);
     green_join(&g0, NULL);
     green_join(&g1, NULL);
-    printf("done\n");
+    green_join(&g2, NULL);
+    green_join(&g3, NULL);
+    printf("value of counter %d\n", counter);
 }
-counter = 0;
 void *increment_counter(void *arg){
     int id = *(int*) arg;
-    int loop = 100000;
+    int loop = 1000000;
     while (loop > 0){
             printf("thread %d: %d\n", id, loop);
             loop--;
@@ -60,6 +66,5 @@ void *test_cond(void *arg) {
 int main() {
     green_cond_init(&cond);
     first_small_test();
-    printf("value of counter %d\n", counter);
     return 0;
 }
