@@ -2,7 +2,6 @@
 #include "green.h"
 
 void *test_cond(void *arg);
-
 void *test_yield(void *arg);
 void *increment_counter(void *arg);
 void first_small_test();

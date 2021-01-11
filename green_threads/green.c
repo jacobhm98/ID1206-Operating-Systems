@@ -89,7 +89,6 @@ void green_thread() {
 
     void *result = (*this->fun)(this->arg);
 
-
     //place waiting (joining) thread in ready queue
     if (this->join != NULL) {
         enqueue(&readyQueue, this->join);
@@ -136,6 +135,9 @@ int green_join(green_t *thread, void **res) {
 }
 
 int enqueue(green_t **head, green_t *node) {
+    if (node == NULL) {
+        return 0;
+    }
     if (*head == NULL) {
         *head = node;
         return 0;
@@ -213,7 +215,7 @@ int green_mutex_lock(green_mutex_t *mutex) {
 
 int green_mutex_unlock(green_mutex_t *mutex) {
     sigprocmask(SIG_BLOCK, &block, NULL);
-    if (mutex->suspended != NULL) {
+    if (*mutex->suspended != NULL) {
         enqueue(&readyQueue, dequeue(mutex->suspended));
     } else {
         mutex->taken = FALSE;

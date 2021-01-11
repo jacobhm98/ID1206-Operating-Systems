@@ -19,20 +19,10 @@ sys/time.h
 -
 zconf.h
 -
-stdio.h
--
-time.h
--
 string.h
 -
 
 /Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.h
 ucontext.h
 -
-
-/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/main.c
-stdio.h
--
-green.h
-/Users/jacobmalm/Documents/KTH/bachelors/os/ID1206-Operating_Systems/green_threads/green.h
 
