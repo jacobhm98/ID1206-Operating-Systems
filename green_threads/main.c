@@ -37,7 +37,6 @@ int flag = 0;
 green_cond_t cond;
 
 void *test_cond(void *arg) {
-    green_cond_init(&cond);
     int id = *(int *) arg;
     int loop = 100000;
     while (loop > 0) {
@@ -73,6 +72,7 @@ void test_race_cond() {
 }
 
 int main() {
+    green_cond_init(&cond);
     first_small_test();
     printf("value of counter %ld\n", counter);
     return 0;
