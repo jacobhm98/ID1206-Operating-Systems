@@ -7,6 +7,10 @@ void *test_yield(void *arg);
 void *increment_counter(void *arg);
 void first_small_test();
 
+int flag = 0;
+green_cond_t cond;
+green_mutex_t mutex;
+long counter = 0;
 
 void *test_yield(void *arg){
     int i = *(int*)arg;
@@ -18,7 +22,6 @@ void *test_yield(void *arg){
     }
 }
 
-counter = 0;
 void first_small_test() {
     green_t g0, g1, g2, g3;
     int a0 = 0;
@@ -41,12 +44,12 @@ void *increment_counter(void *arg){
     while (loop > 0){
             //printf("thread %d: %d\n", id, loop);
             loop--;
+            green_mutex_lock(&mutex);
             counter++;
+            green_mutex_unlock(&mutex);
     }
 }
 
-int flag = 0;
-green_cond_t cond;
 
 void *test_cond(void *arg) {
     int id = *(int *) arg;
@@ -65,6 +68,7 @@ void *test_cond(void *arg) {
 
 int main() {
     green_cond_init(&cond);
+    green_mutex_init(&mutex);
     first_small_test();
     return 0;
 }

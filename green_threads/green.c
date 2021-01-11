@@ -29,9 +29,9 @@ static void init() __attribute__((constructor));
 
 void green_thread();
 
-int enqueue(green_t**, green_t*);
+int enqueue(green_t **, green_t *);
 
-green_t *dequeue(green_t**);
+green_t *dequeue(green_t **);
 
 void init() {
     getcontext(&main_cntx);
@@ -177,17 +177,48 @@ int contains(green_t **head, green_t *node) {
 }
 
 void green_cond_init(green_cond_t *cond) {
-    cond->head = malloc(sizeof(green_t *));
+    cond->waiting = malloc(sizeof(green_t *));
 }
 
 void green_cond_wait(green_cond_t *cond) {
     green_t *this = running;
-    enqueue(cond->head, this);
-    while (contains(cond->head, this)) {
+    enqueue(cond->waiting, this);
+    while (contains(cond->waiting, this)) {
         green_yield();
     }
 }
 
 void green_cond_signal(green_cond_t *cond) {
-    dequeue(cond->head);
+    enqueue(&readyQueue, dequeue(cond->waiting));
+}
+
+int green_mutex_init(green_mutex_t *mutex) {
+    mutex->taken = FALSE;
+    mutex->suspended = malloc(sizeof(green_t *));
+}
+
+int green_mutex_lock(green_mutex_t *mutex) {
+    sigprocmask(SIG_BLOCK, &block, NULL);
+    green_t *susp = running;
+    if (mutex->taken) {
+        enqueue(mutex->suspended, susp);
+        green_t *next = dequeue(&readyQueue);
+        running = next;
+        swapcontext(susp->context, next->context);
+    } else {
+        mutex->taken = TRUE;
+    }
+    sigprocmask(SIG_UNBLOCK, &block, NULL);
+    return 0;
+}
+
+int green_mutex_unlock(green_mutex_t *mutex) {
+    sigprocmask(SIG_BLOCK, &block, NULL);
+    if (mutex->suspended != NULL) {
+        enqueue(&readyQueue, dequeue(mutex->suspended));
+    } else {
+        mutex->taken = FALSE;
+    }
+    sigprocmask(SIG_UNBLOCK, &block, NULL);
+    return 0;
 }
