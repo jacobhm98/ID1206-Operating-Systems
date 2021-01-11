@@ -31,6 +31,7 @@ void green_thread();
 int enqueue(green_t **, green_t *);
 
 green_t *dequeue(green_t **);
+int list_length(green_t **);
 
 void init() {
     getcontext(&main_cntx);
@@ -177,6 +178,18 @@ int contains(green_t **head, green_t *node) {
         return TRUE;
     return FALSE;
 }
+int list_length(green_t **head){
+    int count = 0;
+    if (*head == NULL){
+        return 0;
+    }
+    green_t *curr_node = *head;
+    while (curr_node->next != NULL) {
+        curr_node = curr_node->next;
+        count++;
+    }
+    return count;
+}
 
 void green_cond_init(green_cond_t *cond) {
     cond->waiting = malloc(sizeof(green_t*));
@@ -213,6 +226,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
 
 void green_cond_signal(green_cond_t *cond) {
     printf("waking up a thread from cv suspension\n");
+    printf("length of cond q: %d\n", list_length(cond->waiting));
     green_t *wake_up = dequeue(cond->waiting);
     assert(wake_up != NULL);
     enqueue(&readyQueue, wake_up);
