@@ -183,32 +183,23 @@ void green_cond_init(green_cond_t *cond) {
 
 void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     sigprocmask(SIG_BLOCK, &block, NULL);
-    printf("beginning to wait\n");
     green_t *this = running;
     enqueue(cond->waiting, this);
-    if (mutex != NULL) {
-        green_mutex_unlock(mutex);
-        sigprocmask(SIG_BLOCK, &block, NULL);
-        printf("mutex released\n");
+    if (mutex != NULL){
+        mutex->taken = FALSE;
+        enqueue(&readyQueue, mutex->suspended);
+        mutex->suspended = NULL;
     }
-    while (contains(cond->waiting, this)) {
-        printf("suspended in cv\n");
-        green_t *next = dequeue(&readyQueue);
-        swapcontext(this->context, next->context);
-
-    }
-    printf("released from cv q\n");
-    if (mutex != NULL) {
-        if (mutex->taken) {
-            enqueue(cond->waiting, this);
-            printf("mutex was taken\n");
-            while (contains(cond->waiting, this)) {
-                enqueue(&readyQueue, this);
-                green_t *next = dequeue(&readyQueue);
-                swapcontext(this->context, next->context);
-            }
-        } else {
-            printf("we take the mutex and leave the function\n");
+    green_t *next = dequeue(&readyQueue);
+    running = next;
+    swapcontext(this->context, next->context);
+    if (mutex != NULL){
+        if (mutex->taken){
+            enqueue(mutex->suspended, this);
+            running = dequeue(&readyQueue);
+            swapcontext(this->context, running->context);
+        }
+        else{
             mutex->taken = TRUE;
         }
     }
