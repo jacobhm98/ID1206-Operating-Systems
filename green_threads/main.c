@@ -38,6 +38,7 @@ void *increment_counter(void *arg){
             counter++;
     }
 }
+
 int flag = 0;
 green_cond_t cond;
 

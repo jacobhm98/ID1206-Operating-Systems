@@ -14,7 +14,7 @@
 #define FALSE 0
 #define TRUE 1
 #define STACK_SIZE 4096
-#define PERIOD 100
+#define PERIOD 10
 
 
 static ucontext_t main_cntx = {0};
@@ -137,7 +137,6 @@ int green_join(green_t *thread, void **res) {
         swapcontext(susp->context, next->context);
     }
     res = thread->retval;
-    free(thread->context->uc_stack.ss_sp);
     return 0;
 }
 
