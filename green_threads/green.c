@@ -137,9 +137,7 @@ int green_join(green_t *thread, void **res) {
 }
 
 int enqueue(green_t **head, green_t *node) {
-    printf("we are in enq\n");
     if (node == NULL) {
-        printf("we should be returning here\n");
         return 0;
     }
     if (*head == NULL) {
@@ -208,6 +206,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
         mutex->suspended = NULL;
     }
     green_t *next = dequeue(&readyQueue);
+    assert(next != NULL);
     running = next;
     printf("i will schedule another thread\n");
     swapcontext(this->context, next->context);
