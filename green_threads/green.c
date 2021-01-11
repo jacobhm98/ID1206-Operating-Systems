@@ -56,6 +56,7 @@ void init() {
 }
 
 void timer_handler(int sig){
+    sigprocmask(SIG_BLOCK, &block, NULL);
     green_t *susp = running;
     enqueue(&readyQueue, susp);
     green_t *next = dequeue(&readyQueue);
@@ -68,6 +69,7 @@ void timer_handler(int sig){
     snprintf(buf, 30, "this is timer period: %f\n", time_spent);
     write(1, buf, 30);
     executionBegin = executionEnd;
+    sigprocmask(SIG_UNBLOCK, &block, NULL);
     swapcontext(susp->context, next->context);
 }
 
