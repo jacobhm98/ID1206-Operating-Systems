@@ -178,7 +178,7 @@ int contains(green_t **head, green_t *node) {
 }
 
 void green_cond_init(green_cond_t *cond) {
-    cond->waiting = malloc(sizeof(green_t *));
+    *cond->waiting = NULL;
 }
 
 void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
@@ -219,8 +219,8 @@ void green_cond_signal(green_cond_t *cond) {
 
 int green_mutex_init(green_mutex_t *mutex) {
     mutex->taken = FALSE;
-    mutex->suspended = malloc(sizeof(green_t *));
     *mutex->suspended = NULL;
+    return 0;
 }
 
 int green_mutex_lock(green_mutex_t *mutex) {
