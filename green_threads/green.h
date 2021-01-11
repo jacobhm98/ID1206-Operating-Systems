@@ -31,16 +31,17 @@ typedef struct green_cond_t {
     green_t **waiting;
 } green_cond_t;
 
-void green_cond_init(green_cond_t *);
-
-void green_cond_wait(green_cond_t *);
-
-void green_cond_signal(green_cond_t *);
-
 typedef struct green_mutex_t {
     volatile int taken;
     green_t **suspended;
 } green_mutex_t;
+
+void green_cond_init(green_cond_t *);
+
+void green_cond_wait(green_cond_t *, green_mutex_t*);
+
+void green_cond_signal(green_cond_t *);
+
 
 int green_mutex_init(green_mutex_t*);
 int green_mutex_lock(green_mutex_t*);

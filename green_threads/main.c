@@ -28,14 +28,14 @@ void first_small_test() {
     int a1 = 1;
     int a2 = 2;
     int a3 = 3;
-    green_create(&g0, mutex_test, &a0);
-    green_create(&g1, mutex_test, &a1);
-    green_create(&g2, mutex_test, &a2);
-    green_create(&g3, mutex_test, &a3);
+    green_create(&g0, test_cond, &a0);
+    green_create(&g1, test_cond, &a1);
+    //green_create(&g2, mutex_test, &a2);
+    //green_create(&g3, mutex_test, &a3);
     green_join(&g0, NULL);
     green_join(&g1, NULL);
-    green_join(&g2, NULL);
-    green_join(&g3, NULL);
+    //green_join(&g2, NULL);
+    //green_join(&g3, NULL);
     printf("value of counter %d\n", counter);
 }
 void *mutex_test(void *arg){
@@ -72,7 +72,7 @@ void *test_cond(void *arg) {
             flag = (id + 1) % 2;
             green_cond_signal(&cond);
         } else {
-            green_cond_wait(&cond);
+            green_cond_wait(&cond, &mutex);
         }
     }
 }

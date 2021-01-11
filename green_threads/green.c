@@ -180,12 +180,32 @@ void green_cond_init(green_cond_t *cond) {
     cond->waiting = malloc(sizeof(green_t *));
 }
 
-void green_cond_wait(green_cond_t *cond) {
+void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
+    sigprocmask(SIG_BLOCK, &block, NULL);
     green_t *this = running;
     enqueue(cond->waiting, this);
-    while (contains(cond->waiting, this)) {
-        green_yield();
+    if (mutex != NULL) {
+        green_mutex_unlock(mutex);
     }
+    while (contains(cond->waiting, this)) {
+        enqueue(&readyQueue, this);
+        green_t *next = dequeue(&readyQueue);
+        swapcontext(this->context, next->context);
+
+    }
+    if (mutex != NULL) {
+        if (mutex->taken) {
+            enqueue(cond->waiting, this);
+            while (contains(cond->waiting, this)) {
+                enqueue(&readyQueue, this);
+                green_t *next = dequeue(&readyQueue);
+                swapcontext(this->context, next->context);
+            }
+        } else {
+            mutex->taken = TRUE;
+        }
+    }
+    sigprocmask(SIG_UNBLOCK, &block, NULL);
 }
 
 void green_cond_signal(green_cond_t *cond) {
