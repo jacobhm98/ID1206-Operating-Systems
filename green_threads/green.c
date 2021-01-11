@@ -63,7 +63,7 @@ void timer_handler(int sig){
 
     clock_t executionEnd = clock();
     double time_spent = (double) (executionEnd - executionBegin)/CLOCKS_PER_SEC;
-    printf("timer period %f\n", time_spent);
+    //printf("timer period %f\n", time_spent);
     executionBegin = executionEnd;
     swapcontext(susp->context, next->context);
 }
