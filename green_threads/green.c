@@ -210,11 +210,10 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
 }
 
 void green_cond_signal(green_cond_t *cond) {
-    assert(cond->waiting != NULL);
+    printf("waking up a thread from cv suspension\n");
     green_t *wake_up = dequeue(cond->waiting);
     assert(wake_up != NULL);
     enqueue(&readyQueue, wake_up);
-    printf("waking up a thread from cv suspension\n");
 }
 
 int green_mutex_init(green_mutex_t *mutex) {
