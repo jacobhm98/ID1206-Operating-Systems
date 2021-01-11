@@ -187,7 +187,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     enqueue(cond->waiting, this);
     if (mutex != NULL){
         mutex->taken = FALSE;
-        enqueue(&readyQueue, mutex->suspended);
+        enqueue(&readyQueue, *mutex->suspended);
         mutex->suspended = NULL;
     }
     green_t *next = dequeue(&readyQueue);
