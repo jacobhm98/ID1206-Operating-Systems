@@ -153,9 +153,7 @@ int enqueue(green_t **head, green_t *node) {
 }
 
 green_t *dequeue(green_t **head) {
-    printf("entered dequeue\n");
     if (*head == NULL) {
-        printf("returning null from deq\n");
         return NULL;
     }
     green_t *node = *head;
@@ -229,7 +227,9 @@ void green_cond_signal(green_cond_t *cond) {
     printf("waking up a thread from cv suspension\n");
     printf("length of cond q: %d\n", list_length(cond->waiting));
     green_t *wake_up = dequeue(cond->waiting);
+    printf("we are back from deq\n");
     assert(wake_up != NULL);
+    printf("we passed the assertion\n");
     enqueue(&readyQueue, wake_up);
 }
 
