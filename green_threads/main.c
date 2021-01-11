@@ -29,6 +29,7 @@ void first_small_test() {
     int a2 = 2;
     int a3 = 3;
     green_create(&g0, test_cond, &a0);
+    printf("creating thread number 2");
     green_create(&g1, test_cond, &a1);
     //green_create(&g2, mutex_test, &a2);
     //green_create(&g3, mutex_test, &a3);
