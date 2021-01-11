@@ -110,6 +110,7 @@ void green_thread() {
 }
 
 int green_yield() {
+    sigprocmask(SIG_BLOCK, &block, NULL);
     green_t *susp = running;
     //add susp to ready queue;
     enqueue(&readyQueue, susp);
@@ -119,6 +120,7 @@ int green_yield() {
 
     running = next;
     swapcontext(susp->context, next->context);
+    sigprocmask(SIG_UNBLOCK, &block, NULL);
     return 0;
 }
 

@@ -58,5 +58,6 @@ void *test_cond(void *arg){
 int main() {
     green_cond_init(&cond);
     first_small_test();
+    printf("value of counter %d\n", counter);
     return 0;
 }
