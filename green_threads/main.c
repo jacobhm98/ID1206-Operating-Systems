@@ -77,7 +77,9 @@ void *test_cond(void *arg) {
         } else {
             green_cond_wait(&cond, &mutex);
         }
+        printf("about to unlock\n");
         green_mutex_unlock(&mutex);
+        printf("unlocked\n");
     }
 }
 
