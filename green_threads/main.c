@@ -73,6 +73,7 @@ void *test_cond(void *arg) {
             loop--;
             flag = (id + 1) % 2;
             green_cond_signal(&cond);
+            printf("signal done\n");
         } else {
             green_cond_wait(&cond, &mutex);
         }
