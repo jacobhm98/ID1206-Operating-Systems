@@ -254,10 +254,11 @@ int green_mutex_lock(green_mutex_t *mutex) {
 
 int green_mutex_unlock(green_mutex_t *mutex) {
     sigprocmask(SIG_BLOCK, &block, NULL);
+    printf("entered mutex");
     if (*mutex->suspended != NULL) {
-        printf("mutex suspended is not null\n");
         enqueue(&readyQueue, dequeue(mutex->suspended));
     } else {
+        printf("mutex suspended is null\n");
         mutex->taken = FALSE;
     }
     sigprocmask(SIG_UNBLOCK, &block, NULL);
