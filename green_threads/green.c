@@ -178,10 +178,10 @@ int contains(green_t **head, green_t *node) {
     return FALSE;
 }
 int list_length(green_t **head){
-    int count = 0;
     if (*head == NULL){
         return 0;
     }
+    int count = 1;
     green_t *curr_node = *head;
     while (curr_node->next != NULL) {
         curr_node = curr_node->next;
@@ -200,6 +200,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     green_t *this = running;
     enqueue(cond->waiting, this);
     printf("I am placed on the cond waitlist\n");
+    printf("list length: %d", list_length(cond->waiting));
     if (mutex != NULL){
         mutex->taken = FALSE;
         enqueue(&readyQueue, *mutex->suspended);
