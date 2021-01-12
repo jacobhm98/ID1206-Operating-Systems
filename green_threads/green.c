@@ -204,7 +204,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     if (mutex != NULL){
         mutex->taken = FALSE;
         enqueue(&readyQueue, *mutex->suspended);
-        mutex->suspended = NULL;
+        *mutex->suspended = NULL;
     }
     green_t *next = dequeue(&readyQueue);
     assert(next != NULL);
@@ -254,7 +254,7 @@ int green_mutex_lock(green_mutex_t *mutex) {
 
 int green_mutex_unlock(green_mutex_t *mutex) {
     sigprocmask(SIG_BLOCK, &block, NULL);
-    printf("entered mutex");
+    printf("entered mutex\n");
     if (*mutex->suspended != NULL) {
         enqueue(&readyQueue, dequeue(mutex->suspended));
     } else {
