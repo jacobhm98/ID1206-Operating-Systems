@@ -67,19 +67,15 @@ void *test_cond(void *arg) {
     int loop = 100000;
     while (loop > 0) {
         green_mutex_lock(&mutex);
-        printf("thread %d\n", id);
         if (flag == id) {
             printf("thread %d: %d\n", id, loop);
             loop--;
             flag = (id + 1) % 2;
             green_cond_signal(&cond);
-            printf("signal done\n");
         } else {
             green_cond_wait(&cond, &mutex);
         }
-        printf("about to unlock\n");
         green_mutex_unlock(&mutex);
-        printf("unlocked\n");
     }
 }
 
