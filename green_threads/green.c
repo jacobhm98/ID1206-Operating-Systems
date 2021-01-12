@@ -200,7 +200,7 @@ void green_cond_wait(green_cond_t *cond, green_mutex_t *mutex) {
     green_t *this = running;
     enqueue(cond->waiting, this);
     printf("I am placed on the cond waitlist\n");
-    printf("list length: %d", list_length(cond->waiting));
+    printf("list length: %d\n", list_length(cond->waiting));
     if (mutex != NULL){
         mutex->taken = FALSE;
         enqueue(&readyQueue, *mutex->suspended);
@@ -229,8 +229,8 @@ void green_cond_signal(green_cond_t *cond) {
     printf("waking up a thread from cv suspension\n");
     printf("length of cond q: %d\n", list_length(cond->waiting));
     green_t *wake_up = dequeue(cond->waiting);
-    printf("we are back from deq\n");
     enqueue(&readyQueue, wake_up);
+    printf("successful enq\n");
 }
 
 int green_mutex_init(green_mutex_t *mutex) {
