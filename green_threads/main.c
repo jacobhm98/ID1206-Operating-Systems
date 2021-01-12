@@ -55,7 +55,7 @@ void *consumer(void *arg){
         else{
             green_cond_wait(&full, &mutex);
         }
-        green_mutex_unlock("&mutex");
+        green_mutex_unlock(&mutex);
     }
 }
 
