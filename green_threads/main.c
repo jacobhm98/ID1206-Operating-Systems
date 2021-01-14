@@ -33,7 +33,7 @@ void *producer(void *arg) {
         if (resource == EMPTY) {
             //produce
             resource = FULL;
-            printf("PRODUCE");
+            printf("PRODUCING");
             green_cond_signal(&full);
         }
         else{
